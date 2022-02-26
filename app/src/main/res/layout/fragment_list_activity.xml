@@ -9,7 +9,6 @@
     tools:context=".ui.ListActivity.ListActivityFragment">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/tomyumkung"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:backgroundTint="#FF4466"
@@ -25,14 +24,5 @@
 
     </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:backgroundTint="#990077"
-        app:layout_constraintBottom_toBottomOf="@+id/tomyumkung"
-        android:layout_marginBottom="100dp"
-        app:layout_constraintEnd_toEndOf="parent">
-
-    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

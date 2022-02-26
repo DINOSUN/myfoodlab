@@ -19,33 +19,6 @@
         app:layout_constraintWidth="415dp"
         app:srcCompat="@drawable/backgound_loguot" />
 
-    <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight="24dp"
-        app:layout_constraintHorizontal_bias="0.916"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth="24dp"
-        app:srcCompat="@drawable/edit" />
-
-    <TextView
-        android:id="@+id/txtEdit2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="8dp"
-        android:fontFamily="@font/medium"
-        android:text="Edit"
-        android:textColor="#3F414E"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView17"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/txtName2"
         android:layout_width="wrap_content"

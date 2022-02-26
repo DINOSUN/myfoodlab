@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Myfoodlab">
         <activity
+            android:name=".Scan_Ai"
+            android:exported="false" />
+        <activity
             android:name=".CardMenu_SweetandSour"
             android:exported="false" />
         <activity

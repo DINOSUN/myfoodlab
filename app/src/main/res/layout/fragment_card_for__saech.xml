@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECE7E7">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Spaghetti_seach"
+        android:layout_width="300dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#FFFFFF"
+        app:cardCornerRadius="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView424"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/semib"
+                android:text="สปาเก็ตตี้คาโบนาร่า"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView425"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="92dp"
+                android:fontFamily="@font/semib"
+                android:text="Spaghetti Carbonara"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView424" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="80dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView425">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip150"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="เส้นสปาเก็ตตี้"
+                    android:textColor="#000000"
+                    android:textSize="9sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip151"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="พาเมซานชีส"
+                    android:textColor="#000000"
+                    android:textSize="9sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip152"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="ไข่ไก่"
+                    android:textColor="#000000"
+                    android:textSize="9sp" />
+            </com.google.android.material.chip.ChipGroup>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView11"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Spaghetti_seach"
+        app:layout_constraintStart_toStartOf="@+id/Spaghetti_seach">
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="56dp"
+            android:layout_height="62dp"
+            app:srcCompat="@drawable/spaghetticarbonara" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Chawanmushi_seach"
+        android:layout_width="300dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFFFFF"
+        app:cardCornerRadius="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Spaghetti_seach">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView426"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/semib"
+                android:text="ไข่ตุ๋นญี่ปุ่น"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView427"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="92dp"
+                android:fontFamily="@font/semib"
+                android:text="Chawanmushi"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView426" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="90dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView427">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip153"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="ผงซุปดาชิ"
+                    android:textColor="#000000"
+                    android:textSize="9sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip154"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="ไข่ไก่"
+                    android:textColor="#000000"
+                    android:textSize="9sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip155"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="ปูอัด"
+                    android:textColor="#000000"
+                    android:textSize="9sp" />
+            </com.google.android.material.chip.ChipGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView14"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Chawanmushi_seach"
+        app:layout_constraintStart_toStartOf="@+id/Chawanmushi_seach">
+
+        <ImageView
+            android:id="@+id/imageView82"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            app:srcCompat="@drawable/steamedeggs" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Jumokbub_saech"
+        android:layout_width="300dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFFFFF"
+        app:cardCornerRadius="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Chawanmushi_seach">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView428"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/semib"
+                android:text="จูม็อกบับ"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView429"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="92dp"
+                android:fontFamily="@font/semib"
+                android:text="Jumokbub"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView428" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="90dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView429">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip156"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="ทูน่า"
+                    android:textColor="#000000"
+                    android:textSize="9sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip157"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="สาหร่าย"
+                    android:textColor="#000000"
+                    android:textSize="9sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip158"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="ข้าวญี่ปุ่น"
+                    android:textColor="#000000"
+                    android:textSize="9sp" />
+
+            </com.google.android.material.chip.ChipGroup>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView15"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Jumokbub_saech"
+        app:layout_constraintStart_toStartOf="@+id/Jumokbub_saech">
+
+        <ImageView
+            android:id="@+id/imageView83"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            app:srcCompat="@drawable/jumokbap" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Chicken_seach"
+        android:layout_width="300dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFFFFF"
+        app:cardCornerRadius="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Jumokbub_saech">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView430"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/semib"
+                android:text="ไก่ทอดเกาหลี"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView431"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="92dp"
+                android:fontFamily="@font/semib"
+                android:text="Korean fried chicken"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView430" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="90dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView431">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip160"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="โคชูจัง"
+                    android:textColor="#000000"
+                    android:textSize="9sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip161"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="ปีกไก่"
+                    android:textColor="#000000"
+                    android:textSize="9sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip162"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="แป้งทอด"
+                    android:textColor="#000000"
+                    android:textSize="9sp" />
+            </com.google.android.material.chip.ChipGroup>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Chicken_seach"
+        app:layout_constraintStart_toStartOf="@+id/Chicken_seach">
+
+        <ImageView
+            android:id="@+id/imageView84"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            app:srcCompat="@drawable/koreanfriedchicken" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Okonomiyaki_seach"
+        android:layout_width="300dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFFFFF"
+        app:cardCornerRadius="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Chicken_seach">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView432"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/semib"
+                android:text="โอโคโนมิยากิ"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView433"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="92dp"
+                android:fontFamily="@font/semib"
+                android:text="Okonomiyaki"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView432" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="90dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView433">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip164"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="กะหล่ำปลี"
+                    android:textColor="#000000"
+                    android:textSize="9sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip165"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="ปลาแห้ง"
+                    android:textColor="#000000"
+                    android:textSize="9sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip166"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="แป้งฮาคุริกิ"
+                    android:textColor="#000000"
+                    android:textSize="9sp" />
+            </com.google.android.material.chip.ChipGroup>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Okonomiyaki_seach"
+        app:layout_constraintStart_toStartOf="@+id/Okonomiyaki_seach">
+
+        <ImageView
+            android:id="@+id/imageView85"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            app:srcCompat="@drawable/okonomiyaki" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Tomyumwithmushroom_seach"
+        android:layout_width="300dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFFFFF"
+        app:cardCornerRadius="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Okonomiyaki_seach">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView434"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="8dp"
+                android:text="ต้มยำอกไก่ใส่เห็ด"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:fontFamily="@font/semib"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView435"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="92dp"
+                android:text="Tom yum with mushroom"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:fontFamily="@font/semib"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView434" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="90dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView435">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip167"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="อกไก่"
+                    android:textColor="#000000"
+                    android:textSize="9sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip168"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="เครื่องต้มยำ"
+                    android:textColor="#000000"
+                    android:textSize="9sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip169"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="พริกขี้หนู"
+                    android:textColor="#000000"
+                    android:textSize="9sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp" />
+            </com.google.android.material.chip.ChipGroup>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Tomyumwithmushroom_seach"
+        app:layout_constraintStart_toStartOf="@+id/Tomyumwithmushroom_seach">
+
+        <ImageView
+            android:id="@+id/imageView86"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            app:srcCompat="@drawable/tomyumchicken" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

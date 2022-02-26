@@ -227,10 +227,168 @@
                         android:layout_marginStart="32dp"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/regular"
-                        android:text="1. กระเทียมไทยสับ 10 กลีบ"
+                        android:text="1. กระเทียมไทยสับ "
                         android:textColor="#4F4F4F"
+                        android:textSize="14sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView313" />
+
+                    <TextView
+                        android:id="@+id/textView410"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="95dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/regular"
+                        android:text="10     กรัม"
+                        android:textColor="#4F4F4F"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/textView314"
+                        app:layout_constraintTop_toBottomOf="@+id/textView313" />
+
+                    <TextView
+                        android:id="@+id/textView411"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="139dp"
+                        android:fontFamily="@font/regular"
+                        android:text="200     กรัม"
+                        android:textColor="#4F4F4F"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/textView315"
+                        app:layout_constraintTop_toBottomOf="@+id/textView410" />
+
+                    <TextView
+                        android:id="@+id/textView412"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="140dp"
+                        android:fontFamily="@font/regular"
+                        android:text="20     กรัม"
+                        android:textColor="#4F4F4F"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/textView317"
+                        app:layout_constraintTop_toBottomOf="@+id/textView411" />
+
+                    <TextView
+                        android:id="@+id/textView413"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="140dp"
+                        android:fontFamily="@font/regular"
+                        android:text="20     กรัม"
+                        android:textColor="#4F4F4F"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/textView318"
+                        app:layout_constraintTop_toBottomOf="@+id/textView412" />
+
+                    <TextView
+                        android:id="@+id/textView414"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="137dp"
+                        android:fontFamily="@font/regular"
+                        android:text="10     กรัม"
+                        android:textColor="#4F4F4F"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/textView319"
+                        app:layout_constraintTop_toBottomOf="@+id/textView413" />
+
+                    <TextView
+                        android:id="@+id/textView415"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="105dp"
+                        android:fontFamily="@font/regular"
+                        android:text="10     กรัม"
+                        android:textColor="#4F4F4F"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/textView320"
+                        app:layout_constraintTop_toBottomOf="@+id/textView414" />
+
+                    <TextView
+                        android:id="@+id/textView416"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="132dp"
+                        android:fontFamily="@font/regular"
+                        android:text="10     กรัม"
+                        android:textColor="#4F4F4F"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/textView360"
+                        app:layout_constraintTop_toBottomOf="@+id/textView415" />
+
+                    <TextView
+                        android:id="@+id/textView417"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="134dp"
+                        android:fontFamily="@font/regular"
+                        android:text="5      กรัม"
+                        android:textColor="#4F4F4F"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/textView360"
+                        app:layout_constraintTop_toBottomOf="@+id/textView416" />
+
+                    <TextView
+                        android:id="@+id/textView418"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="99dp"
+                        android:fontFamily="@font/regular"
+                        android:text="1/2      ถ้วย"
+                        android:textColor="#4F4F4F"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/textView362"
+                        app:layout_constraintTop_toBottomOf="@+id/textView417" />
+
+                    <TextView
+                        android:id="@+id/textView419"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="114dp"
+                        android:fontFamily="@font/regular"
+                        android:text="2      ช้อนโต๊ะ"
+                        android:textColor="#4F4F4F"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/textView363"
+                        app:layout_constraintTop_toBottomOf="@+id/textView418" />
+
+                    <TextView
+                        android:id="@+id/textView420"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="135dp"
+                        android:fontFamily="@font/regular"
+                        android:text="1/4      ช้อนโต๊ะ"
+                        android:textColor="#4F4F4F"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/textView364"
+                        app:layout_constraintTop_toBottomOf="@+id/textView419" />
+
+                    <TextView
+                        android:id="@+id/textView421"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="143dp"
+                        android:fontFamily="@font/regular"
+                        android:text="3      ช้อนโต๊ะ"
+                        android:textColor="#4F4F4F"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/textView365"
+                        app:layout_constraintTop_toBottomOf="@+id/textView420" />
+
+                    <TextView
+                        android:id="@+id/textView422"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="139dp"
+                        android:fontFamily="@font/regular"
+                        android:text="1       ช้อนโต๊ะ"
+                        android:textColor="#4F4F4F"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/textView366"
+                        app:layout_constraintTop_toBottomOf="@+id/textView421" />
 
                     <TextView
                         android:id="@+id/textView315"
@@ -238,8 +396,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
                         android:fontFamily="@font/regular"
-                        android:text="2. เนื้อหมู 200 กรัม (หั่นเป็นชิ้นบาง ๆ)"
+                        android:text="2. เนื้อหมู "
                         android:textColor="#4F4F4F"
+                        android:textSize="14sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView314" />
 
@@ -249,8 +408,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
                         android:fontFamily="@font/regular"
-                        android:text="3. สับปะรด (หั่นชิ้นพอดีคำ) 1 ถ้วย"
+                        android:text="3. สับปะรด"
                         android:textColor="#4F4F4F"
+                        android:textSize="14sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView315" />
 
@@ -260,8 +420,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
                         android:fontFamily="@font/regular"
-                        android:text="4. แตงกวา (หั่นชิ้นพอดีคำ) 1 ถ้วย "
+                        android:text="4. แตงกวา "
                         android:textColor="#4F4F4F"
+                        android:textSize="14sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView317" />
 
@@ -271,8 +432,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
                         android:fontFamily="@font/regular"
-                        android:text="5. หอมใหญ่ (หั่นเสี้ยว) 1 หัว"
+                        android:text="5. หอมใหญ่ "
                         android:textColor="#4F4F4F"
+                        android:textSize="14sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView318" />
 
@@ -282,8 +444,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
                         android:fontFamily="@font/regular"
-                        android:text="6. พริกฝรั่งเหลือง 1/2 ลูก"
+                        android:text="6. พริกฝรั่งเหลือง "
                         android:textColor="#4F4F4F"
+                        android:textSize="14sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView319" />
 
@@ -293,8 +456,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
                         android:fontFamily="@font/regular"
-                        android:text="7. มะเขือเทศ 1 ลูกใหญ่ (หั่น 4 ส่วน)"
+                        android:text="7. มะเขือเทศ "
                         android:textColor="#4F4F4F"
+                        android:textSize="14sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView320" />
 
@@ -304,8 +468,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
                         android:fontFamily="@font/regular"
-                        android:text="8. ต้นหอม (หั่นท่อน) 1 ต้น"
+                        android:text="8. ต้นหอม "
                         android:textColor="#4F4F4F"
+                        android:textSize="14sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView360" />
 
@@ -315,8 +480,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
                         android:fontFamily="@font/regular"
-                        android:text="9. ซอสมะเขือเทศ 1/2 ถ้วย"
+                        android:text="9. ซอสมะเขือเทศ"
                         android:textColor="#4F4F4F"
+                        android:textSize="14sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView361" />
 
@@ -326,8 +492,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
                         android:fontFamily="@font/regular"
-                        android:text="10. น้ำตาลทราย 1-2 ช้อนโต๊ะ"
+                        android:text="10. น้ำตาลทราย "
                         android:textColor="#4F4F4F"
+                        android:textSize="14sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView362" />
 
@@ -337,8 +504,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
                         android:fontFamily="@font/regular"
-                        android:text="11. เกลือป่นเล็กน้อย (ปรุงรส)"
+                        android:text="11. เกลือป่น"
                         android:textColor="#4F4F4F"
+                        android:textSize="14sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView363" />
 
@@ -348,8 +516,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
                         android:fontFamily="@font/regular"
-                        android:text="12. น้ำเปล่า 3 ช้อนโต๊ะ"
+                        android:text="12. น้ำเปล่า "
                         android:textColor="#4F4F4F"
+                        android:textSize="14sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView364" />
 
@@ -359,8 +528,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
                         android:fontFamily="@font/regular"
-                        android:text="13. น้ำมันพืช (สำหรับผัด)"
+                        android:text="13. น้ำมันพืช"
                         android:textColor="#4F4F4F"
+                        android:textSize="14sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView365" />
 

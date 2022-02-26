@@ -108,7 +108,7 @@
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="16dp"
                         android:fontFamily="@font/semib"
-                        android:text="จูม็อกบับ"
+                        android:text="ไข่ตุ๋นญี่ปุ่น"
                         android:textColor="#000000"
                         android:textSize="16sp"
                         app:layout_constraintStart_toStartOf="parent"
@@ -227,10 +227,84 @@
                         android:layout_marginStart="32dp"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/regular"
-                        android:text="1. ไข่ไก่ 1 ฟอง"
+                        android:text="1. ไข่ไก่ "
                         android:textColor="#4F4F4F"
+                        android:textSize="14sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView313" />
+
+                    <TextView
+                        android:id="@+id/textView404"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="150dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/regular"
+                        android:text="1       ฟอง"
+                        android:textColor="#4F4F4F"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/textView314"
+                        app:layout_constraintTop_toBottomOf="@+id/textView313" />
+
+                    <TextView
+                        android:id="@+id/textView405"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:fontFamily="@font/regular"
+                        android:text="150      มิลลิลิตร"
+                        android:textColor="#4F4F4F"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/textView315"
+                        app:layout_constraintTop_toBottomOf="@+id/textView404" />
+
+                    <TextView
+                        android:id="@+id/textView406"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="134dp"
+                        android:fontFamily="@font/regular"
+                        android:text="1       ช้อนโต๊ะ"
+                        android:textColor="#4F4F4F"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/textView315"
+                        app:layout_constraintTop_toBottomOf="@+id/textView405" />
+
+                    <TextView
+                        android:id="@+id/textView407"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="103dp"
+                        android:fontFamily="@font/regular"
+                        android:text="1/2       ช้อนโต๊ะ"
+                        android:textColor="#4F4F4F"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/textView318"
+                        app:layout_constraintTop_toBottomOf="@+id/textView406" />
+
+                    <TextView
+                        android:id="@+id/textView408"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="103dp"
+                        android:fontFamily="@font/regular"
+                        android:text="1/4       ช้อนโต๊ะ"
+                        android:textColor="#4F4F4F"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/textView318"
+                        app:layout_constraintTop_toBottomOf="@+id/textView407" />
+
+                    <TextView
+                        android:id="@+id/textView409"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="135dp"
+                        android:fontFamily="@font/regular"
+                        android:text="100        กรัม"
+                        android:textColor="#4F4F4F"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/textView320"
+                        app:layout_constraintTop_toBottomOf="@+id/textView408" />
 
                     <TextView
                         android:id="@+id/textView315"
@@ -238,8 +312,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
                         android:fontFamily="@font/regular"
-                        android:text="2. น้ำเปล่า 150 ml"
+                        android:text="2. น้ำเปล่า "
                         android:textColor="#4F4F4F"
+                        android:textSize="14sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView314" />
 
@@ -249,8 +324,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
                         android:fontFamily="@font/regular"
-                        android:text="3. โชยุ 1 ช้อนโต๊ะ"
+                        android:text="3. โชยุ "
                         android:textColor="#4F4F4F"
+                        android:textSize="14sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView315" />
 
@@ -260,8 +336,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
                         android:fontFamily="@font/regular"
-                        android:text="4. ผงซุปดาชิ 1/2 ช้อนโต๊ะ"
+                        android:text="4. ผงซุปดาชิ "
                         android:textColor="#4F4F4F"
+                        android:textSize="14sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView317" />
 
@@ -271,8 +348,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
                         android:fontFamily="@font/regular"
-                        android:text="5. เกลือเล็กน้อย"
+                        android:text="5. เกลือ"
                         android:textColor="#4F4F4F"
+                        android:textSize="14sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView318" />
 
@@ -282,8 +360,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
                         android:fontFamily="@font/regular"
-                        android:text="6. ปูอัด (หรือเนื้อสัตวว์อื่นๆ ตามชอบ)"
+                        android:text="6. ปูอัด "
                         android:textColor="#4F4F4F"
+                        android:textSize="14sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView319" />
 

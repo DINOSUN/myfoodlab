@@ -21,6 +21,8 @@ import com.example.myfoodlab.ui.thaifood.ThaifoodFragment
 import com.example.myfoodlab.ui.topfood.TopFoodFragment
 import com.example.myfoodlab.ui.topfood_clean.Topfood_CleanFragment
 import com.example.myfoodlab.ui.topfood_korea.Topfood_KoreaFragment
+import kotlinx.android.synthetic.main.fragment_home_menu.*
+
 
 class HomeMenuFragment : Fragment() {
     override fun onCreateView(
@@ -103,7 +105,10 @@ class HomeMenuFragment : Fragment() {
             tran.commit()
         }
 
+
+
         return root
     }
+
 }
 
