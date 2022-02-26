@@ -5,8 +5,6 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.fragment.app.Fragment
-import com.example.myfoodlab.ui.home.HomeMenuFragment
 import kotlinx.android.synthetic.main.activity_welcome_signup.*
 
 class WelcomeSignup : AppCompatActivity() {
@@ -34,7 +32,7 @@ class WelcomeSignup : AppCompatActivity() {
 
         // ปุ่ม Skip เข้าหน้า MainMenu
         text_skip.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, Search::class.java)
             startActivity(intent)
             }
         }

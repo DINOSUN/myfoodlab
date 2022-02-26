@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Myfoodlab">
         <activity
+            android:name=".OneDish_Random"
+            android:exported="false" />
+        <activity
+            android:name=".Pad_Random"
+            android:exported="false" />
+        <activity
             android:name=".CardMenu_SweetandSour"
             android:exported="false" />
         <activity
@@ -31,6 +37,12 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Tom_Random"
+            android:exported="false" />
+        <activity
+            android:name=".Search"
             android:exported="false" />
         <activity
             android:name=".WelcomeSignup"

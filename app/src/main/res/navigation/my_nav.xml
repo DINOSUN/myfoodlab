@@ -18,7 +18,7 @@
         android:id="@+id/randomFragment"
         android:name="com.example.myfoodlab.ui.random.RandomFragment"
         android:label="fragment_random2"
-        tools:layout="@layout/fragment_random2" />
+        tools:layout="@layout/fragment_random" />
     <fragment
         android:id="@+id/logoutFragment"
         android:name="com.example.myfoodlab.ui.logout.LogoutFragment"
