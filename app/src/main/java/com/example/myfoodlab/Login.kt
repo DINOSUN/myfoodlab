@@ -8,29 +8,32 @@ import android.util.Patterns
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.myfoodlab.databinding.ActivityLoginBinding
+import com.example.myfoodlab.ui.home.HomeMenuFragment
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
-import kotlinx.android.synthetic.main.activity_login.*
 
 
-class Login : AppCompatActivity() {
+class Login: AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
 
     lateinit var txtEmailAddress: EditText
     lateinit var txtPassword: EditText
-    lateinit var buttonlogin: ConstraintLayout
+    lateinit var layout_constraint_Login: ConstraintLayout
     lateinit var txtSignUp: TextView
     lateinit var email: String
     lateinit var password: String
     lateinit var txtForgotPassword: TextView
-    lateinit var txtSkip_Login: TextView
-    //lateinit var FB: ConstraintLayout
+    lateinit var layout_constraint_Facebook: ConstraintLayout
+    lateinit var layout_constraint_Google: ConstraintLayout
+    lateinit var txtSkip_Login : TextView
 
     private lateinit var mAuth: FirebaseAuth
+
+
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,49 +43,47 @@ class Login : AppCompatActivity() {
 
         txtEmailAddress = findViewById<EditText>(R.id.txtEmailAddress)
         txtPassword = findViewById<EditText>(R.id.txtPassword)
-        buttonlogin = findViewById<ConstraintLayout>(R.id.buttonlogin)
+        layout_constraint_Login = findViewById <ConstraintLayout>(R.id.layout_constraint_Login)
         txtSignUp = findViewById<TextView>(R.id.txtSignUp)
-        txtForgotPassword = findViewById<TextView>(R.id.txtForgotPassword)
-        //txtSkip_Login = findViewById<TextView>(R.id.txtSkip_Login)
-        //FB = findViewById<ConstraintLayout>(R.id.FB)
+        txtForgotPassword =  findViewById<TextView>(R.id.txtForgotPassword)
+        txtSkip_Login = findViewById <TextView>(R.id.txtSkip_Login)
 
         mAuth = FirebaseAuth.getInstance()
 
 
-        //เปลี่ยนหน้าไปหน้าสมัคร
-        txtSignUp!!.setOnClickListener {
 
-            val intent = Intent(this, SignUp::class.java)
+        //เปลี่ยนหน้าไปหน้าสมัคร
+        txtSignUp.setOnClickListener {
+
+            val intent = Intent(this,SignUp::class.java)
             startActivity(intent)
         }
 
 
 
-        txtForgotPassword!!.setOnClickListener {
-            val gotoForget = Intent(this, ForgotPassword::class.java)
+        txtForgotPassword.setOnClickListener{
+            val gotoForget = Intent(this,ForgotPassword::class.java)
             startActivity(gotoForget)
         }
 
-        buttonlogin!!.setOnClickListener {
+        layout_constraint_Login.setOnClickListener {
             validateData()
+            /* val gotoMainMenu = Intent(this,MainMenu::class.java)
+             startActivity(gotoMainMenu)*/
+        }
+
+        txtSkip_Login.setOnClickListener {
+            val gotoMainMenu = Intent(this, HomeMenuFragment::class.java)
+            startActivity(gotoMainMenu)
         }
 
 
-        /*txtSkip_Login!!.setOnClickListener {
-            val gotoCardMenu = Intent(this,CardMenu::class.java)
-            startActivity(gotoCardMenu)
-        }*/
-
-        /* FB!!.setOnClickListener{
-                val gotoAlert_dialog = Intent(this, Alert_dialog::class.java)
-                 startActivity(gotoAlert_dialog)
-            }*/
 
     }
 
-    override fun onStart() {
+    override fun onStart(){
         super.onStart()
-        val currentUser = mAuth!!.currentUser
+        val currentUser = mAuth.currentUser
         updateUI(currentUser)
 
 
@@ -95,13 +96,15 @@ class Login : AppCompatActivity() {
         password = binding.txtPassword.text.toString().trim()
 
         //validate data
-        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
             //invalid email format
             binding.txtEmailAddress.error = "Invalid email format"
-        } else if (TextUtils.isEmpty(password)) {
+        }
+        else if (TextUtils.isEmpty(password)){
             //no password entered
             binding.txtPassword.error = "Please enter password"
-        } else {
+        }
+        else{
             //data is validate, begin login
             loginEmail()
 
@@ -111,20 +114,21 @@ class Login : AppCompatActivity() {
     }
 
     private fun loginEmail() {
-        email = txtEmailAddress!!.text.toString()
-        password = txtPassword!!.text.toString()
+        email = txtEmailAddress.text.toString()
+        password = txtPassword.text.toString()
 
-        mAuth!!.signInWithEmailAndPassword(email, password).addOnCompleteListener(this) { task ->
-            if (task.isSuccessful) {
-                Log.d("My App", "Create New User Success!")
-                val user = mAuth!!.currentUser
-                updateUI(user)
-            } else {
-                binding.txtPassword.error = "Invalid password format"
-                Log.w("MyApp", "Failure Process!", task.exception)
-                Toast.makeText(this@Login, "Authentication Failed.", Toast.LENGTH_SHORT).show()
-                updateUI(null)
-            }
+        mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this) {
+                task -> if (task.isSuccessful){
+            Log.d("My App","Create New User Success!")
+            val user = mAuth.currentUser
+            updateUI(user)
+        }
+        else{
+            binding.txtPassword.error = "Invalid password format"
+            Log.w("MyApp","Failure Process!",task.exception)
+            Toast.makeText(this@Login,"Authentication Failed.", Toast.LENGTH_SHORT).show()
+            updateUI(null)
+        }
 
         }
 
@@ -132,18 +136,18 @@ class Login : AppCompatActivity() {
     }
 
     private fun updateUI(user: FirebaseUser?) {
-        if (user != null) {
+        if (user != null){
             val uid = user.uid
             val email = user.email
-            Toast.makeText(this@Login, "Welcome: $email your ID is: $uid", Toast.LENGTH_SHORT)
-                .show()
-            val intenSession = Intent(this, ListActivity::class.java)
+            Toast.makeText(this@Login,"Welcome: $email your ID is: $uid", Toast.LENGTH_SHORT).show()
+            val intenSession = Intent(this, MainActivity::class.java)
             startActivity(intenSession)
         }
     }
 
 
 }
+
 
 
 
