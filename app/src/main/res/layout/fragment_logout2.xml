@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".ui.logout.LogoutFragment">
 
 
@@ -19,40 +20,13 @@
         app:layout_constraintWidth="415dp"
         app:srcCompat="@drawable/backgound_loguot" />
 
-    <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight="24dp"
-        app:layout_constraintHorizontal_bias="0.916"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth="24dp"
-        app:srcCompat="@drawable/edit" />
-
-    <TextView
-        android:id="@+id/txtEdit2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="8dp"
-        android:fontFamily="@font/medium"
-        android:text="Edit"
-        android:textColor="#3F414E"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView17"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/txtName2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:fontFamily="@font/semib"
-        android:text="Jeev jobs"
+        android:text="Your Profile"
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,11 +35,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtEmail_Profile2"
+        android:id="@+id/Email_Profile2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/medium"
-        android:text="imshuvo97@gmail.com"
+        android:text="Email"
         android:textColor="#3F414E"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,6 +48,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtName2" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/logoutBtn"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginStart="32dp"

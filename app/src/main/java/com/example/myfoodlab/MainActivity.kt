@@ -2,15 +2,28 @@ package com.example.myfoodlab
 
 
 import android.os.Bundle
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.example.myfoodlab.databinding.ActivityMainBinding
+import com.example.myfoodlab.databinding.FragmentLogout2Binding
 import com.example.myfoodlab.ui.fillter.FillterFragment
 import com.example.myfoodlab.ui.home.HomeMenuFragment
 import com.example.myfoodlab.ui.logout.LogoutFragment
 import com.example.myfoodlab.ui.random.RandomFragment
+import com.example.myfoodlab.ui.thaifood.ThaifoodFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity  : AppCompatActivity(){
+
+    private lateinit var binding: ActivityMainBinding
+
+    private  lateinit var actionBar: ActionBar
+
+    private  lateinit var firebaseAuth: FirebaseAuth
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -18,6 +31,11 @@ class MainActivity  : AppCompatActivity(){
         val homeMenuFragment = HomeMenuFragment()
         val randomFragment = RandomFragment()
         val logoutFragment = LogoutFragment()
+        var thaifoodFragment = ThaifoodFragment()
+
+
+
+
 
 
         makeCurrentFragment(homeMenuFragment)

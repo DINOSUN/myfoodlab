@@ -32,10 +32,6 @@ class Login: AppCompatActivity() {
 
     private lateinit var mAuth: FirebaseAuth
 
-
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
@@ -73,7 +69,7 @@ class Login: AppCompatActivity() {
         }
 
         txtSkip_Login.setOnClickListener {
-            val gotoMainMenu = Intent(this, HomeMenuFragment::class.java)
+            val gotoMainMenu = Intent(this, MainActivity::class.java)
             startActivity(gotoMainMenu)
         }
 
@@ -140,7 +136,7 @@ class Login: AppCompatActivity() {
             val uid = user.uid
             val email = user.email
             Toast.makeText(this@Login,"Welcome: $email your ID is: $uid", Toast.LENGTH_SHORT).show()
-            val intenSession = Intent(this, HomeMenuFragment::class.java)
+            val intenSession = Intent(this, MainActivity::class.java)
             startActivity(intenSession)
         }
     }

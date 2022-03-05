@@ -14,7 +14,10 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.myfoodlab.databinding.ActivitySignUpBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 import kotlinx.android.synthetic.main.activity_login.*
 
 class SignUp : AppCompatActivity() {
@@ -53,6 +56,7 @@ class SignUp : AppCompatActivity() {
 
         textLogin.setOnClickListener{
             val gotoLogin = Intent(this,Login::class.java)
+            gotoLogin.putExtra("hello", txtUsernameCreate.text.toString())
             startActivity(gotoLogin)
         }
 
@@ -101,17 +105,31 @@ class SignUp : AppCompatActivity() {
 
 
     private fun createAccount() {
-        email = txtEmailCreate!!.text.toString()
-        password = txtPasswordCreate!!.text.toString()
+        email = txtEmailCreate?.text.toString()
+        password = txtPasswordCreate?.text.toString()
         mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(this) {
                 task -> if (task.isSuccessful){
             Log.d("My App","Create New User Success!")
             val user = mAuth.currentUser
             val databaseReference = database.reference.child("users").push()
+            //val username = user?.displayName
+            databaseReference.addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    val username = snapshot.child("Username").getValue(String::class.java)
+                    Log.d("firebase_name", "Username = ${username}")
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                    TODO("Not yet implemented")
+                }
+
+            })
             databaseReference.child("uid").setValue(user!!.uid)
             databaseReference.child("Email").setValue(user.email)
             databaseReference.child("Username").setValue(txtUsernameCreate.text.toString())
+            databaseReference.child("uid").child("username").setValue(username)
             updateUI(user)
+            //Log.d("firebase_name", "Username = ${databaseReference.child("uid").child("username").setValue(username)}")
         }
         else{
             Log.w("MyApp","Failure Process!",task.exception)
@@ -129,8 +147,9 @@ class SignUp : AppCompatActivity() {
         if (user != null){
             val uid = user.uid
             val email = user.email
+
             Toast.makeText(this@SignUp,"Welcome: $email your ID is: $uid", Toast.LENGTH_SHORT).show()
-            val intenSession = Intent(this, ListActivity::class.java)
+            val intenSession = Intent(this, MainActivity::class.java)
             startActivity(intenSession)
         }
     }
