@@ -12,6 +12,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.myfoodlab.databinding.ActivitySignUpBinding
+import com.example.myfoodlab.ui.home.HomeMenuFragment
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.FirebaseDatabase
@@ -130,7 +131,7 @@ class SignUp : AppCompatActivity() {
             val uid = user.uid
             val email = user.email
             Toast.makeText(this@SignUp,"Welcome: $email your ID is: $uid", Toast.LENGTH_SHORT).show()
-            val intenSession = Intent(this, ListActivity::class.java)
+            val intenSession = Intent(this, MainActivity::class.java)
             startActivity(intenSession)
         }
     }

@@ -140,7 +140,7 @@ class Login: AppCompatActivity() {
             val uid = user.uid
             val email = user.email
             Toast.makeText(this@Login,"Welcome: $email your ID is: $uid", Toast.LENGTH_SHORT).show()
-            val intenSession = Intent(this, HomeMenuFragment::class.java)
+            val intenSession = Intent(this, MainActivity::class.java)
             startActivity(intenSession)
         }
     }

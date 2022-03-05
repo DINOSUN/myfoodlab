@@ -107,7 +107,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout5"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -130,7 +130,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txtEmailAddress"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:background="@drawable/background_eye"
                 android:hint="Email Address"
                 android:textColor="#828282"
@@ -164,7 +164,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txtPassword"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:background="@drawable/background_eye"
                 android:hint="Password"
                 android:inputType="textPassword"
