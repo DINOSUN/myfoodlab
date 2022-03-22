@@ -30,9 +30,9 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/imageView7"
+                    android:id="@+id/scanbtn"
                     android:layout_width="24dp"
-                    android:src="@drawable/scan"
+                    android:src="@drawable/scana"
                     android:layout_height="24dp"
                     android:layout_marginTop="24dp"
                     android:layout_marginEnd="32dp"
@@ -45,11 +45,11 @@
                     android:layout_marginTop="24dp"
                     android:layout_marginEnd="8dp"
                     android:id="@+id/button_hommenu"
-                    app:layout_constraintEnd_toStartOf="@+id/imageView7"
+                    app:layout_constraintEnd_toStartOf="@+id/scanbtn"
                     app:layout_constraintTop_toTopOf="parent">
 
                     <ImageView
-                        android:id="@+id/imageView75"
+                        android:id="@+id/SearchIcon"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/iconssearch"
@@ -59,44 +59,17 @@
                         app:layout_constraintTop_toTopOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <TextView
-                    android:id="@+id/textView18"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="58dp"
-                    android:layout_marginTop="72dp"
-                    android:fontFamily="@font/semib"
-                    android:text="Hello ,"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/textView22"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="108dp"
-                    android:layout_marginTop="72dp"
-                    android:fontFamily="@font/semib"
-                    android:text="Jeev Jobs"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
                 <LinearLayout
                     android:id="@+id/linearLayout_search_menu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="68dp"
                     android:layout_marginEnd="24dp"
                     android:orientation="vertical"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView22"/>
+                    app:layout_constraintTop_toBottomOf="@+id/button_hommenu" />
 
                 <com.denzcoskun.imageslider.ImageSlider
                     android:id="@+id/image_slider"

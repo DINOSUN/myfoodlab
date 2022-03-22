@@ -5,13 +5,10 @@
 
 
     <!--Dropdown item -->
-
     <string-array name="Randomfood">
         <item>ต้ม</item>
         <item>ผัด</item>
-        <item>ทอด</item>
         <item>อาหารจานเดียว</item>
-        <item>ของทานเล่น</item>
     </string-array>
 
 </resources>

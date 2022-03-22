@@ -29,7 +29,7 @@ class ForgotPassword : AppCompatActivity() {
 
 
         txtSkip_Forgot.setOnClickListener {
-            val gotoMainMenu = Intent(this, HomeMenuFragment::class.java)
+            val gotoMainMenu = Intent(this, MainActivity::class.java)
             startActivity(gotoMainMenu)
         }
 

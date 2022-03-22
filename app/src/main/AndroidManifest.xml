@@ -3,6 +3,7 @@
     package="com.example.myfoodlab">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
 
     <application
         android:allowBackup="true"
@@ -11,6 +12,15 @@
         android:roundIcon="@mipmap/ic_foodlab"
         android:supportsRtl="true"
         android:theme="@style/Theme.Myfoodlab">
+        <activity
+            android:name=".puff_Random"
+            android:exported="false" />
+        <activity
+            android:name=".OneDish_Random"
+            android:exported="false" />
+        <activity
+            android:name=".Boiled_Random"
+            android:exported="false" />
         <activity
             android:name=".Scan_Ai"
             android:exported="false" />
@@ -43,6 +53,9 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Search"
             android:exported="false" />
         <activity
             android:name=".WelcomeSignup"

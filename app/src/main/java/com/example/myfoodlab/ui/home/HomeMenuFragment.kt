@@ -13,6 +13,8 @@ import androidx.cardview.widget.CardView
 import androidx.fragment.app.FragmentTransaction
 import com.example.myfoodlab.CardMenu_Tomyumkung
 import com.example.myfoodlab.R
+import com.example.myfoodlab.Scan_Ai
+import com.example.myfoodlab.Search
 import com.example.myfoodlab.ui.italianfood.ItalianFoodFragment
 import com.example.myfoodlab.ui.japan.JapanFoodFragment
 import com.example.myfoodlab.ui.koreafood.koreafoodFragment
@@ -22,6 +24,7 @@ import com.example.myfoodlab.ui.topfood.TopFoodFragment
 import com.example.myfoodlab.ui.topfood_clean.Topfood_CleanFragment
 import com.example.myfoodlab.ui.topfood_korea.Topfood_KoreaFragment
 import kotlinx.android.synthetic.main.fragment_home_menu.*
+import kotlinx.android.synthetic.main.fragment_home_menu.view.*
 
 
 class HomeMenuFragment : Fragment() {
@@ -103,6 +106,17 @@ class HomeMenuFragment : Fragment() {
             val tran: FragmentTransaction = requireFragmentManager().beginTransaction()
             tran.replace(R.id.mainLayout, topfood_microwave)
             tran.commit()
+        }
+
+        /* SearchIcon Intent to Activity Search */
+        root.SearchIcon.setOnClickListener {
+            val intent = Intent(activity, Search::class.java)
+            startActivity(intent)
+        }
+
+        root.scanbtn.setOnClickListener {
+            val intent = Intent (activity, Scan_Ai::class.java)
+            startActivity(intent)
         }
 
 

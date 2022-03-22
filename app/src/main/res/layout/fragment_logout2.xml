@@ -10,13 +10,14 @@
 
     <ImageView
         android:id="@+id/imageView16"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight="318dp"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth="415dp"
+        app:layout_constraintWidth="420dp"
         app:srcCompat="@drawable/backgound_loguot" />
 
     <TextView
@@ -51,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="298dp"
+        android:layout_marginTop="200dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/backgound_button_logout"
         app:layout_constraintEnd_toEndOf="parent"

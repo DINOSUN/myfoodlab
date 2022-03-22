@@ -10,56 +10,44 @@
     tools:context=".Scan_Ai">
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout3"
-        android:layout_width="359dp"
-        android:layout_height="325dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="140dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/choose_image"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
     <ImageView
-        android:id="@+id/imageView87"
+        android:id="@+id/selectbtn"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/imageai"
         app:srcCompat="@drawable/albumolder" />
 
     <ImageView
-        android:id="@+id/imageView88"
+        android:id="@+id/camerabtn"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="54dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/imageai"
         app:srcCompat="@drawable/camera" />
 
     <TextView
         android:id="@+id/textView423"
-        android:layout_width="wrap_content"
+        android:layout_width="313dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="177dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="177dp"
         android:fontFamily="@font/regular"
         android:text="Choose image and press select button"
+        android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="12sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+        app:layout_constraintTop_toBottomOf="@+id/camerabtn" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/predictionbtn"
         android:layout_width="299dp"
         android:layout_height="48dp"
         android:layout_marginStart="32dp"
@@ -74,13 +62,25 @@
             android:id="@+id/textView436"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Select"
-            android:textSize="16sp"
             android:fontFamily="@font/semib"
+            android:text="Select"
             android:textColor="#FFFFFF"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageai"
+        android:layout_width="359dp"
+        android:layout_height="325dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/camera_ai" />
 </androidx.constraintlayout.widget.ConstraintLayout>
