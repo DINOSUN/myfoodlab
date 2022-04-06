@@ -9,7 +9,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView64"
+        android:id="@+id/scan_topkorea"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginTop="24dp"
@@ -24,7 +24,7 @@
         android:layout_height="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView64"
+        app:layout_constraintEnd_toStartOf="@+id/scan_topkorea"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView

@@ -9,7 +9,7 @@
     tools:context=".CardMenu_SweetandSour">
 
     <ImageView
-        android:id="@+id/imageView55"
+        android:id="@+id/scan_sweetandsour"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginTop="24dp"
@@ -19,12 +19,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/button_cardmenu_sweetandsour"
+        android:id="@+id/layout_constraint_sweetandsour"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView55"
+        app:layout_constraintEnd_toStartOf="@+id/scan_sweetandsour"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
@@ -49,7 +49,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight="620dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_cardmenu_sweetandsour"
+        app:layout_constraintTop_toBottomOf="@+id/layout_constraint_sweetandsour"
         app:layout_constraintWidth="359dp">
 
         <androidx.core.widget.NestedScrollView

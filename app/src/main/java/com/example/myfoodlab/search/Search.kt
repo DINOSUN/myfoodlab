@@ -19,7 +19,10 @@ class Search : AppCompatActivity(), ItemsAdapter.ClickListener {
         ItemsModal("ผัดไทยกุ้งสด", "ไชโป๊","เต้าหู้เหลือง","ใบกุ่ยช่าย","486 kcal","11", R.drawable.padthai),
         ItemsModal("ข้าวผัดรถไฟ", "ข้าวสวย","หมู","คะน้า","600 kcal","11", R.drawable.khowpadrodfie),
         ItemsModal("ซุปกิมจิ", "ผงซุปกิมจิ","กิมจิ","โคชูจัง","894 kcal","12", R.drawable.kimchisoup),
-        ItemsModal("บิบิมบับ", "ข้าวสวย","เนื้อสัตว์บด","โคชูจัง","430 kcal","14", R.drawable.bibimbap)
+        ItemsModal("บิบิมบับ", "ข้าวสวย","เนื้อสัตว์บด","โคชูจัง","430 kcal","14", R.drawable.bibimbap),
+        ItemsModal("ข้าวหน้าเนื้อ", "โชยุ","มิริน","สาเก","720 kcal","11", R.drawable.yoshinoyagyudon),
+        ItemsModal("สุกี้ยากี้น้ำดำ", "คิคโคแมน","มิริน","สาเก","625 kcal","12", R.drawable.sukiyaki),
+        ItemsModal("ต๊อกโบกี", "แป้งต๊อก","กิมจิ","โคชูจัง","420 kcal","14", R.drawable.tokbokki),
     )
 
     private val itemsModalList = ArrayList<ItemsModal>()

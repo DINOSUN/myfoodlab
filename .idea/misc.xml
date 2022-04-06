@@ -43,7 +43,7 @@
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/drawable/spinner_backgound.xml" value="0.22467532467532467" />
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/drawable/transparent_search.xml" value="0.22467532467532467" />
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/activity_alert_dialog.xml" value="0.4" />
-        <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/activity_boiled_random.xml" value="0.4" />
+        <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/activity_boiled_random.xml" value="0.264" />
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/activity_card_menu_jumokbab.xml" value="0.264" />
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/activity_card_menu_poached_eggs.xml" value="0.264" />
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/activity_card_menu_spaghetti.xml" value="0.2" />
@@ -76,7 +76,7 @@
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/fragment_home_menu.xml" value="0.21739130434782608" />
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/fragment_italian_food.xml" value="0.2" />
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/fragment_japan_food.xml" value="0.264" />
-        <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/fragment_koreafood.xml" value="0.2" />
+        <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/fragment_koreafood.xml" value="0.4" />
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/fragment_like.xml" value="0.176" />
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/fragment_list_activity.xml" value="0.21403508771929824" />
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/fragment_logout.xml" value="0.264" />
@@ -88,7 +88,7 @@
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/fragment_random.xml" value="0.264" />
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/fragment_random2.xml" value="0.21403508771929824" />
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/fragment_test.xml" value="0.21403508771929824" />
-        <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/fragment_thaifood.xml" value="0.391025641025641" />
+        <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/fragment_thaifood.xml" value="0.264" />
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/fragment_top_food.xml" value="0.264" />
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/fragment_topfood__clean.xml" value="0.2" />
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/fragment_topfood__korea.xml" value="0.264" />

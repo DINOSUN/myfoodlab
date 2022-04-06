@@ -6,6 +6,7 @@
 
     <!--Dropdown item -->
     <string-array name="Randomfood">
+        <item>เลือกหมวดหมู่อาหาร</item>
         <item>ต้ม</item>
         <item>ผัด</item>
         <item>อาหารจานเดียว</item>

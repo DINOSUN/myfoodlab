@@ -16,6 +16,7 @@ class MainActivity  : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val bottom_navigation = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         val fillterFragment = FillterFragment()
         val homeMenuFragment = HomeMenuFragment()
         val randomFragment = RandomFragment()
@@ -23,8 +24,9 @@ class MainActivity  : AppCompatActivity(){
 
 
         makeCurrentFragment(homeMenuFragment)
+        bottom_navigation.selectedItemId = R.id.menu
 
-        val bottom_navigation = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+
 
         bottom_navigation.setOnItemSelectedListener {
             when (it.itemId) {

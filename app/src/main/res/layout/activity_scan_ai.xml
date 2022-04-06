@@ -12,8 +12,8 @@
 
     <ImageView
         android:id="@+id/selectbtn"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginStart="54dp"
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,8 +22,8 @@
 
     <ImageView
         android:id="@+id/camerabtn"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="54dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +38,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="177dp"
         android:fontFamily="@font/regular"
-        android:text="Choose image and press select button"
+        android:text="Choose image "
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="24sp"
@@ -51,7 +51,7 @@
         android:layout_width="299dp"
         android:layout_height="48dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/button_signup"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,7 +74,7 @@
 
     <ImageView
         android:id="@+id/imageai"
-        android:layout_width="359dp"
+        android:layout_width="340dp"
         android:layout_height="325dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="104dp"

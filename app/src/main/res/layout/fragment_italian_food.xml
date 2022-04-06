@@ -9,7 +9,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/scan_ltalianfood"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginTop="24dp"
@@ -24,7 +24,7 @@
         android:layout_height="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintEnd_toStartOf="@+id/scan_ltalianfood"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView

@@ -69,32 +69,41 @@
                     android:orientation="vertical"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/button_hommenu" />
+                    app:layout_constraintTop_toBottomOf="@+id/button_hommenu" >
 
-                <com.denzcoskun.imageslider.ImageSlider
-                    android:id="@+id/image_slider"
-                    android:layout_width="match_parent"
-                    android:layout_height="156dp"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginTop="24dp"
-                    android:layout_marginEnd="32dp"
-                    app:iss_auto_cycle="true"
-                    app:iss_period="2500"
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView9"
+                    android:layout_width="360dp"
+                    android:layout_height="157dp"
+                    android:layout_marginTop="64dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="5dp"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.515"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/linearLayout_search_menu"
-                    tools:ignore="MissingClass">
+                    app:layout_constraintTop_toBottomOf="@+id/button_hommenu" >
 
-                </com.denzcoskun.imageslider.ImageSlider>
+                    <com.denzcoskun.imageslider.ImageSlider
+                        android:id="@+id/image_slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="157dp"
+                        app:iss_auto_cycle="true"
+                        app:iss_period="2500">
+
+                    </com.denzcoskun.imageslider.ImageSlider>
+
+                </androidx.cardview.widget.CardView>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="39dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/image_slider">
+                    app:layout_constraintTop_toBottomOf="@+id/cardView9">
 
                     <TextView
                         android:id="@+id/textView47"

@@ -6,11 +6,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.myfoodlab.CardMenu_PoachedEggs
-import com.example.myfoodlab.CardMenu_Spaghetti_Carbonara
-import com.example.myfoodlab.R
+import com.example.myfoodlab.*
 import kotlinx.android.synthetic.main.fragment_italian_food.view.*
 import kotlinx.android.synthetic.main.fragment_japan_food.view.*
+import kotlinx.android.synthetic.main.fragment_thaifood.view.*
 
 class ItalianFoodFragment : Fragment() {
 
@@ -23,6 +22,16 @@ class ItalianFoodFragment : Fragment() {
 
         root.spaghetticarbonara.setOnClickListener {
             val intent = Intent (activity, CardMenu_Spaghetti_Carbonara::class.java)
+            startActivity(intent)
+        }
+
+        root.button_italianfood.setOnClickListener {
+            val intent = Intent(activity, Search::class.java)
+            startActivity(intent)
+        }
+
+        root.scan_ltalianfood.setOnClickListener {
+            val intent = Intent (activity, Scan_Ai::class.java)
             startActivity(intent)
         }
 

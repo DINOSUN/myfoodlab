@@ -9,7 +9,7 @@
     tools:context=".CardMenu_Jumokbab">
 
     <ImageView
-        android:id="@+id/imageView53"
+        android:id="@+id/scan_jumokbab"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginTop="24dp"
@@ -19,12 +19,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/button_cardmenu_jumokbabab"
+        android:id="@+id/layout_constraint_jumokbabab"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView53"
+        app:layout_constraintEnd_toStartOf="@+id/scan_jumokbab"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
@@ -49,7 +49,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight="620dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_cardmenu_jumokbabab"
+        app:layout_constraintTop_toBottomOf="@+id/layout_constraint_jumokbabab"
         app:layout_constraintWidth="359dp">
 
         <androidx.core.widget.NestedScrollView

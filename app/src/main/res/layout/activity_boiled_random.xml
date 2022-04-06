@@ -105,7 +105,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/poppinslight"
-                    android:text="สปาเก็ตตี้คาโบนาร่า"
+                    android:text="ซุปกิมจิ"
                     android:textColor="#000000"
                     android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -176,7 +176,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="48dp"
                         android:fontFamily="@font/robotoregular"
-                        android:text="บะหมี่เย็น"
+                        android:text="ผงซุปเกาหลี"
                         android:textColor="#000000"
                         android:textSize="9sp" />
 
@@ -185,7 +185,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="48dp"
                         android:fontFamily="@font/robotoregular"
-                        android:text="น้ำแอปเปิ้ล"
+                        android:text="กิมจิ"
                         android:textColor="#000000"
                         android:textSize="9sp" />
 
@@ -194,7 +194,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="48dp"
                         android:fontFamily="@font/robotoregular"
-                        android:text="น้ำส้มสายชู"
+                        android:text="โคชูจัง"
                         android:textColor="#000000"
                         android:textSize="9sp" />
 
@@ -221,6 +221,7 @@
             android:layout_width="92dp"
             android:layout_height="92dp"
             android:layout_marginBottom="100dp"
+            app:cardCornerRadius="17dp"
             app:layout_constraintBottom_toBottomOf="@+id/jumokbap"
             app:layout_constraintEnd_toEndOf="@+id/jumokbap">
 
@@ -228,7 +229,7 @@
                 android:id="@+id/RandomImage"
                 android:layout_width="92dp"
                 android:layout_height="92dp"
-                app:srcCompat="@drawable/spaghetticarbonara" />
+                app:srcCompat="@drawable/kimchisoup" />
         </androidx.cardview.widget.CardView>
 
 

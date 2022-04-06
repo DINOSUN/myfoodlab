@@ -73,7 +73,7 @@ class Login: AppCompatActivity() {
         }
 
         txtSkip_Login.setOnClickListener {
-            val gotoMainMenu = Intent(this, HomeMenuFragment::class.java)
+            val gotoMainMenu = Intent(this, MainActivity::class.java)
             startActivity(gotoMainMenu)
         }
 

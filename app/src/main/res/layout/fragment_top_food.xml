@@ -10,7 +10,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView35"
+        android:id="@+id/scan_topfood"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginTop="24dp"
@@ -25,7 +25,7 @@
         android:layout_height="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView35"
+        app:layout_constraintEnd_toStartOf="@+id/scan_topfood"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
