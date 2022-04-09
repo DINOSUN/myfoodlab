@@ -44,9 +44,9 @@ class HomeMenuFragment : Fragment() {
         //imageSlider
         val imageList = ArrayList<SlideModel>()
 
-        imageList.add(SlideModel("https://d3jf4l1w8poe53.cloudfront.net/upload/project/78a6589d-8cae-429f-83e7-720d7080fa94/image/3e8ba83e-2136-41b5-a344-ea44834a7828.jpg"))
-        imageList.add(SlideModel("https://sv1.picz.in.th/images/2022/03/27/8BqZuD.png"))
-        imageList.add(SlideModel("https://sv1.picz.in.th/images/2022/03/27/8BqcM9.png"))
+        imageList.add(SlideModel("https://www.img.in.th/images/90477943ee26f7d7b0575141f2983ed1.png"))
+        imageList.add(SlideModel("https://www.img.in.th/images/b0730219e141069c98c2fb1ce4bde5a6.png"))
+        imageList.add(SlideModel("https://www.img.in.th/images/b6afdb87da91f7a30a1739811c30a41d.png"))
 
         val imageSlider = root.findViewById<ImageSlider>(R.id.image_slider)
         imageSlider.setImageList(imageList)

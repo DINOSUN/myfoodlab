@@ -3,7 +3,7 @@
     package="com.example.myfoodlab">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +12,12 @@
         android:roundIcon="@mipmap/ic_foodlab"
         android:supportsRtl="true"
         android:theme="@style/Theme.Myfoodlab">
+        <activity
+            android:name=".ui.fillter.getDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ui.fillter.Filter_main"
+            android:exported="false" />
         <activity
             android:name=".puff_Random"
             android:exported="false" />
