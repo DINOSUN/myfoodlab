@@ -1,3 +1,4 @@
+/*
 package com.example.myfoodlab.ui.microwave_food
 
 import android.content.Intent
@@ -34,4 +35,4 @@ class Microwave_FoodFragment : Fragment() {
 
         return root
     }
-}
+}*/

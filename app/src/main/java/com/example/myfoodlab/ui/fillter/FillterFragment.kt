@@ -22,10 +22,10 @@ class FillterFragment : Fragment() {
     private var rootView: View? = null
     private var focusView: View? = null
     private lateinit var sharedPreferences: SharedPreferences
-    private lateinit var searchFil1 : EditText
-    private lateinit var searchFil2 : EditText
-    private lateinit var searchFil3 : EditText
-    private lateinit var searchFil4 : EditText
+    private lateinit var searchFil1: EditText
+    private lateinit var searchFil2: EditText
+    private lateinit var searchFil3: EditText
+    private lateinit var searchFil4: EditText
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,7 +34,6 @@ class FillterFragment : Fragment() {
         // Inflate the layout for this fragment
         return getPersistentView(inflater, container, savedInstanceState, screenLayout())
     }
-
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -85,12 +84,18 @@ class FillterFragment : Fragment() {
             setEdit.putString("Name3", searchFil3.text.toString())
             setEdit.putString("Name4", searchFil4.text.toString())
             setEdit.commit()
-            Toast.makeText(activity, "บันทึกแล้ว", Toast.LENGTH_SHORT).show()
 
 
             /* validate data */
-            val intent = Intent(getActivity(), getDetails::class.java)
-            getActivity()?.startActivity(intent)
+            if (searchFil1.text.isEmpty()) {
+                searchFil1.error = "ยังไม่ได้กรอกวัตถุดิบ"
+            } else {
+                Toast.makeText(activity, "บันทึกแล้ว", Toast.LENGTH_SHORT).show()
+
+                val intent = Intent(getActivity(), getDetails::class.java)
+                getActivity()?.startActivity(intent)
+
+            }
 
         }
 
@@ -100,7 +105,7 @@ class FillterFragment : Fragment() {
         }
 
         search_fillter.setOnClickListener {
-            val intent = Intent (activity, Scan_Ai::class.java)
+            val intent = Intent(activity, Scan_Ai::class.java)
             startActivity(intent)
         }
 

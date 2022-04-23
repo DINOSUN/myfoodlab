@@ -1,3 +1,4 @@
+/*
 package com.example.myfoodlab.ui.japan
 
 import android.content.Intent
@@ -38,4 +39,4 @@ class JapanFoodFragment : Fragment() {
         return root
     }
 
-}
+}*/

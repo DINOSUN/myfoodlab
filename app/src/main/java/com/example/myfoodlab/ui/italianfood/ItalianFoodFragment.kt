@@ -1,3 +1,4 @@
+/*
 package com.example.myfoodlab.ui.italianfood
 
 import android.content.Intent
@@ -37,4 +38,4 @@ class ItalianFoodFragment : Fragment() {
 
         return root
     }
-}
+}*/

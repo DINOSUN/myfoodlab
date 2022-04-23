@@ -68,7 +68,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnConfirm"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
@@ -76,10 +76,12 @@
             android:layout_marginEnd="32dp"
             android:backgroundTint="#F9881F"
             android:text="ถัดไป"
+            android:textColor="#FFFFFFFF"
+            android:background="@drawable/button_fillter"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/detials4" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnBack"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
@@ -87,6 +89,8 @@
             android:layout_marginTop="109dp"
             android:backgroundTint="#F9881F"
             android:text="แก้ไข"
+            android:textColor="#FFFFFFFF"
+            android:background="@drawable/button_fillter"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/detials4" />
 

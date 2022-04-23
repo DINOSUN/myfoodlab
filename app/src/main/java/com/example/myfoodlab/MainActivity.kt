@@ -9,7 +9,6 @@ import com.example.myfoodlab.ui.fillter.FillterFragment
 import com.example.myfoodlab.ui.home.HomeMenuFragment
 import com.example.myfoodlab.ui.logout.LogoutFragment
 import com.example.myfoodlab.ui.random.RandomFragment
-import com.example.myfoodlab.ui.thaifood.ThaifoodFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity  : AppCompatActivity(){

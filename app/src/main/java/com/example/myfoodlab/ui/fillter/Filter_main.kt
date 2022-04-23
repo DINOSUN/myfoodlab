@@ -99,6 +99,9 @@ class Filter_main : AppCompatActivity() {
             "ข้าวคั่ว" -> {
                 larbmoo.visibility = View.VISIBLE
             }
+            else -> {
+                txtNotMenu.visibility = View.VISIBLE
+            }
 
         }
 
@@ -169,6 +172,9 @@ class Filter_main : AppCompatActivity() {
             }
             "ข้าวคั่ว" -> {
                 larbmoo.visibility = View.VISIBLE
+            }
+            else -> {
+                txtNotMenu.visibility = View.VISIBLE
             }
 
 
@@ -242,6 +248,9 @@ class Filter_main : AppCompatActivity() {
             "ข้าวคั่ว" -> {
                 larbmoo.visibility = View.VISIBLE
             }
+            else -> {
+                txtNotMenu.visibility = View.VISIBLE
+            }
 
 
         }
@@ -314,7 +323,9 @@ class Filter_main : AppCompatActivity() {
             "ข้าวคั่ว" -> {
                 larbmoo.visibility = View.VISIBLE
             }
-
+            else -> {
+                txtNotMenu.visibility = View.VISIBLE
+            }
         }
 
 

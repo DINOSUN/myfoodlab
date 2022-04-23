@@ -1,3 +1,4 @@
+/*
 package com.example.myfoodlab.ui.topfood_clean
 
 import android.content.Intent
@@ -38,3 +39,4 @@ class Topfood_CleanFragment : Fragment() {
         }
     }
 
+*/

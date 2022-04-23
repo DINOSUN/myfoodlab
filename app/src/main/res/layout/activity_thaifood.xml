@@ -7,25 +7,10 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_mainmenu"
     android:orientation="vertical"
-    tools:context=".ui.fillter.Filter_main">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/txtNotMenu"
-        android:gravity="center"
-        android:text="ไม่มีเมนู"
-        android:textSize="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:visibility="gone">
-
-    </TextView>
+    tools:context=".ui.thaifood.Thaifood_Activity">
 
     <ImageView
-        android:id="@+id/imageView29"
+        android:id="@+id/scan_thaifood"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginTop="24dp"
@@ -40,11 +25,11 @@
         android:layout_height="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView29"
+        app:layout_constraintEnd_toStartOf="@+id/scan_thaifood"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/SearchIcon_Filter"
+            android:id="@+id/imageView81"
             android:layout_width="24dp"
             android:layout_height="24dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -58,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/transparent_search"
         android:backgroundTint="#85FFFFFF"
@@ -95,14 +80,14 @@
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/semib"
-                        android:text="Filter"
+                        android:text="Thai Food"
                         android:textColor="#3F414E"
                         android:textSize="16sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/tomyumkungFilter"
+                        android:id="@+id/tomyumkung"
                         android:layout_width="300dp"
                         android:layout_height="175dp"
                         android:layout_marginStart="32dp"
@@ -112,22 +97,7 @@
                         app:cardCornerRadius="17dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        android:visibility="gone"
-                        tools:visibility="visible"
                         app:layout_constraintTop_toBottomOf="@+id/textView61">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageView
-                                android:id="@+id/imageView7"
-                                android:layout_width="92dp"
-                                android:layout_height="92dp"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/tomyumkung" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
@@ -269,9 +239,24 @@
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
 
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:layout_marginBottom="100dp"
+                        app:cardCornerRadius="17dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/tomyumkung"
+                        app:layout_constraintEnd_toEndOf="@+id/tomyumkung">
+
+                        <ImageView
+                            android:id="@+id/imageView30"
+                            android:layout_width="92dp"
+                            android:layout_height="92dp"
+                            android:src="@drawable/tomyumkung" />
+
+                    </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/padthaiFilter"
+                        android:id="@+id/cardView_padthai"
                         android:layout_width="300dp"
                         android:layout_height="175dp"
                         android:layout_marginStart="32dp"
@@ -281,22 +266,7 @@
                         app:cardCornerRadius="17dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        android:visibility="gone"
-                        tools:visibility="visible"
-                        app:layout_constraintTop_toBottomOf="@+id/tomyumkungFilter">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageView
-                                android:id="@+id/imageView15"
-                                android:layout_width="92dp"
-                                android:layout_height="92dp"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/padthai" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        app:layout_constraintTop_toBottomOf="@+id/tomyumkung">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
@@ -437,9 +407,23 @@
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
 
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:layout_marginBottom="100dp"
+                        app:cardCornerRadius="17dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/cardView_padthai"
+                        app:layout_constraintEnd_toEndOf="@+id/cardView_padthai">>
+
+                        <ImageView
+                            android:id="@+id/imageView32"
+                            android:layout_width="92dp"
+                            android:layout_height="92dp"
+                            android:src="@drawable/padthai" />
+                    </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/khowpadrodfieFilter"
+                        android:id="@+id/khowpadrodfie"
                         android:layout_width="300dp"
                         android:layout_height="175dp"
                         android:layout_marginStart="32dp"
@@ -449,22 +433,7 @@
                         app:cardCornerRadius="17dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        android:visibility="gone"
-                        tools:visibility="visible"
-                        app:layout_constraintTop_toBottomOf="@+id/padthaiFilter">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageView
-                                android:id="@+id/imageView23"
-                                android:layout_width="92dp"
-                                android:layout_height="92dp"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/khowpadrodfie" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        app:layout_constraintTop_toBottomOf="@+id/cardView_padthai">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
@@ -606,9 +575,24 @@
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
 
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView"
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:layout_marginBottom="100dp"
+                        app:cardCornerRadius="17dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/khowpadrodfie"
+                        app:layout_constraintEnd_toEndOf="@+id/khowpadrodfie">
+
+                        <ImageView
+                            android:id="@+id/imageView34"
+                            android:layout_width="92dp"
+                            android:layout_height="92dp"
+                            android:src="@drawable/khowpadrodfie" />
+                    </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/pickkangmooFilter"
+                        android:id="@+id/pickkangmoo"
                         android:layout_width="300dp"
                         android:layout_height="175dp"
                         android:layout_marginStart="32dp"
@@ -618,22 +602,7 @@
                         app:cardCornerRadius="17dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        android:visibility="gone"
-                        tools:visibility="visible"
-                        app:layout_constraintTop_toBottomOf="@+id/khowpadrodfieFilter">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageView
-                                android:id="@+id/imageView25"
-                                android:layout_width="92dp"
-                                android:layout_height="92dp"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/pickkangmoo" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        app:layout_constraintTop_toBottomOf="@+id/khowpadrodfie">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
@@ -775,6 +744,20 @@
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
 
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:layout_marginBottom="100dp"
+                        app:cardCornerRadius="17dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/pickkangmoo"
+                        app:layout_constraintEnd_toEndOf="@+id/pickkangmoo">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="92dp"
+                            android:layout_height="92dp"
+                            android:src="@drawable/pickkangmoo" />
+                    </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/larbmoo"
@@ -789,22 +772,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        android:visibility="gone"
-                        tools:visibility="visible"
-                        app:layout_constraintTop_toBottomOf="@+id/pickkangmooFilter">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageView
-                                android:id="@+id/imageView35"
-                                android:layout_width="92dp"
-                                android:layout_height="92dp"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/larbmoo" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        app:layout_constraintTop_toBottomOf="@+id/pickkangmoo">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
@@ -946,10 +914,22 @@
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
 
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:layout_marginBottom="100dp"
+                        app:cardCornerRadius="17dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/larbmoo"
+                        app:layout_constraintEnd_toEndOf="@+id/larbmoo">
 
+                        <ImageView
+                            android:id="@+id/imageView10"
+                            android:layout_width="92dp"
+                            android:layout_height="92dp"
+                            android:src="@drawable/larbmoo" />
+                    </androidx.cardview.widget.CardView>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
-
 
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>

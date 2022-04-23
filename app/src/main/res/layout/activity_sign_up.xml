@@ -23,7 +23,8 @@
         app:layout_constraintHorizontal_bias="0.811"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.062" />
+        app:layout_constraintVertical_bias="0.062"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -39,7 +40,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.083"
         app:layout_constraintWidth="78dp"
-        app:srcCompat="@drawable/logofood" />
+        app:srcCompat="@drawable/logofood"
+        tools:ignore="ContentDescription" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout_constraint_Submit"

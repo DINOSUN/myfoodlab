@@ -13,6 +13,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Myfoodlab">
         <activity
+            android:name=".ui.microwave_food.MicrowaveFood_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.koreafood.KoreaFood_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.japan.JapanFood_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.italianfood.ItalianFoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.topfood_korea.TopFoodKorea_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.topfood_clean.TopFoodClean_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.topfood.TopFood_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.thaifood.Thaifood_Activity"
+            android:exported="false" />
+        <activity
             android:name=".ui.fillter.getDetails"
             android:exported="false" />
         <activity

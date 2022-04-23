@@ -1,5 +1,6 @@
 package com.example.myfoodlab
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -27,7 +28,7 @@ class Scan_Ai : AppCompatActivity() {
     private var bitmap: Bitmap? = null
     lateinit var camerabtn : ImageView
 
-    public fun checkandGetpermissions(){
+    fun checkandGetpermissions(){
         if(checkSelfPermission(android.Manifest.permission.CAMERA) == PackageManager.PERMISSION_DENIED){
             requestPermissions(arrayOf(android.Manifest.permission.CAMERA), 100)
         }
@@ -79,13 +80,14 @@ class Scan_Ai : AppCompatActivity() {
         make_prediction.setOnClickListener{
             when (bitmap == null){
                 true -> {
+
                     Toast.makeText(this@Scan_Ai,"กรุณาเลือกรูปภาพเพื่อประมวลผล", Toast.LENGTH_SHORT).show()
                 }
                 false -> {
-                    var resized = Bitmap.createScaledBitmap(bitmap!! , 224,224, true)
+                    val resized = Bitmap.createScaledBitmap(bitmap!! , 224,224, true)
                     val model = MobilenetV110224Quant.newInstance(this)
-                    var tbuffer = TensorImage.fromBitmap(resized)
-                    var byteBuffer = tbuffer.buffer
+                    val tbuffer = TensorImage.fromBitmap(resized)
+                    val byteBuffer = tbuffer.buffer
 
 // Creates inputs for reference.
                     //val shape = intArrayOf(224, 224)
@@ -100,7 +102,7 @@ class Scan_Ai : AppCompatActivity() {
                     val outputs = model.process(inputFeature0)
                     val outputFeature0 = outputs.outputFeature0AsTensorBuffer
 
-                    var max = getMax(outputFeature0.floatArray)
+                    val max = getMax(outputFeature0.floatArray)
 
                     text_view.setText(labels[max])
 // Releases model resources if no longer used.
@@ -113,26 +115,55 @@ class Scan_Ai : AppCompatActivity() {
 
 
         camerabtn.setOnClickListener(View.OnClickListener {
-            var camera : Intent = Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE)
+            val camera : Intent = Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE)
             startActivityForResult(camera, 200)
         })
 
 
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
-        if(requestCode == 250){
-            img_view.setImageURI(data?.data)
+        /*if (data?.clipData != null){*/
 
+        if(requestCode == 250){
+            when(data?.data != null){
+                true -> {
+                    img_view.setImageURI(data?.data)
+                    val uri : Uri ?= data?.data
+                    bitmap = MediaStore.Images.Media.getBitmap(this.contentResolver, uri)
+                    text_view.text = ""
+                }
+
+                false -> {
+                    img_view.setImageURI(null)
+                    img_view.setImageBitmap(null)
+                    bitmap = null
+                    img_view.setImageResource(R.drawable.camera_ai)
+                    text_view.text = "Choose image"
+
+
+                }
+            }
+            /*img_view.setImageURI(data?.data)
             var uri : Uri ?= data?.data
-            bitmap = MediaStore.Images.Media.getBitmap(this.contentResolver, uri)
-        }
-        else if(requestCode == 200 && resultCode == Activity.RESULT_OK){
+            bitmap = MediaStore.Images.Media.getBitmap(this.contentResolver, uri)*/
+        } else if(requestCode == Activity.RESULT_OK ){
             bitmap = data?.extras?.get("data") as Bitmap
             img_view.setImageBitmap(bitmap)
+        } else{
+            img_view.setImageURI(null)
+            img_view.setImageBitmap(null)
         }
+
+        //}
+
+        /*else{
+            img_view.setImageBitmap("")
+        }*/
+
 
     }
 

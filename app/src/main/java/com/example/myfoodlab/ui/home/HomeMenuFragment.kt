@@ -18,14 +18,14 @@ import com.example.myfoodlab.CardMenu_Tomyumkung
 import com.example.myfoodlab.R
 import com.example.myfoodlab.Scan_Ai
 import com.example.myfoodlab.Search
-import com.example.myfoodlab.ui.italianfood.ItalianFoodFragment
-import com.example.myfoodlab.ui.japan.JapanFoodFragment
-import com.example.myfoodlab.ui.koreafood.koreafoodFragment
-import com.example.myfoodlab.ui.microwave_food.Microwave_FoodFragment
-import com.example.myfoodlab.ui.thaifood.ThaifoodFragment
-import com.example.myfoodlab.ui.topfood.TopFoodFragment
-import com.example.myfoodlab.ui.topfood_clean.Topfood_CleanFragment
-import com.example.myfoodlab.ui.topfood_korea.Topfood_KoreaFragment
+import com.example.myfoodlab.ui.italianfood.ItalianFoodActivity
+import com.example.myfoodlab.ui.japan.JapanFood_Activity
+import com.example.myfoodlab.ui.koreafood.KoreaFood_Activity
+import com.example.myfoodlab.ui.microwave_food.MicrowaveFood_Activity
+import com.example.myfoodlab.ui.thaifood.Thaifood_Activity
+import com.example.myfoodlab.ui.topfood.TopFood_Activity
+import com.example.myfoodlab.ui.topfood_clean.TopFoodClean_Activity
+import com.example.myfoodlab.ui.topfood_korea.TopFoodKorea_Activity
 import kotlinx.android.synthetic.main.fragment_home_menu.*
 import kotlinx.android.synthetic.main.fragment_home_menu.view.*
 import java.lang.reflect.Array
@@ -33,14 +33,47 @@ import java.util.ArrayList
 
 
 class HomeMenuFragment : Fragment() {
+
+    private var hasInitializedRootView = false
+    private var rootView: View? = null
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-        // Inflate the layout for this fragment
-        val root = inflater.inflate(R.layout.fragment_home_menu, container, false)
+        return getPersistentView(inflater, container, savedInstanceState, screenLayout())
+    }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        if (!hasInitializedRootView) {
+            hasInitializedRootView = true
+            setupView()
+        }
+    }
+
+    private fun getPersistentView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?,
+        layout: Int
+    ): View? {
+        if (rootView == null) {
+            rootView = inflater.inflate(layout, container, false)
+        } else {
+            (rootView?.parent as? ViewGroup)?.removeView(rootView)
+        }
+        return rootView
+    }
+
+    private fun screenLayout(): Int = R.layout.fragment_home_menu
+
+    private fun setupView() {
+        SetUpHomeMenu()
+    }
+
+    private fun SetUpHomeMenu() {
         //imageSlider
         val imageList = ArrayList<SlideModel>()
 
@@ -48,95 +81,78 @@ class HomeMenuFragment : Fragment() {
         imageList.add(SlideModel("https://www.img.in.th/images/b0730219e141069c98c2fb1ce4bde5a6.png"))
         imageList.add(SlideModel("https://www.img.in.th/images/b6afdb87da91f7a30a1739811c30a41d.png"))
 
-        val imageSlider = root.findViewById<ImageSlider>(R.id.image_slider)
+        val imageSlider = rootView!!.findViewById<ImageSlider>(R.id.image_slider)
         imageSlider.setImageList(imageList)
 
 
         // intent card category
-        val koearFood = root.findViewById<ImageView>(R.id.imageKorean_Food)
-        koearFood.setOnClickListener{
-            val koreanFood = koreafoodFragment()
-            val transaction : FragmentTransaction = requireFragmentManager().beginTransaction()
-            transaction.replace(R.id.mainLayout,koreanFood)
-            transaction.commit()
+        val koearFood = rootView!!.findViewById<ImageView>(R.id.imageKorean_Food)
+        koearFood.setOnClickListener {
+            val intent = Intent (this.requireContext(), KoreaFood_Activity::class.java)
+            startActivity(intent)
 
         }
 
-        val thaiFood = root.findViewById<ImageView>(R.id.imageThai_Food)
-        thaiFood.setOnClickListener{
-            val thaifoodFragment = ThaifoodFragment()
-            val tran : FragmentTransaction = requireFragmentManager().beginTransaction()
-            tran.replace(R.id.mainLayout,thaifoodFragment)
-            tran.commit()
+        val thaiFood = rootView!!.findViewById<ImageView>(R.id.imageThai_Food)
+        thaiFood.setOnClickListener {
+            val intent = Intent (this.requireContext(), Thaifood_Activity::class.java)
+            startActivity(intent)
 
         }
 
-        val italianfood = root.findViewById<ImageView>(R.id.imageItalian_Food)
+        val italianfood = rootView!!.findViewById<ImageView>(R.id.imageItalian_Food)
         italianfood.setOnClickListener {
-            val italianfood = ItalianFoodFragment()
-            val tran: FragmentTransaction = requireFragmentManager().beginTransaction()
-            tran.replace(R.id.mainLayout, italianfood)
-            tran.commit()
+            val intent = Intent (this.requireContext(), ItalianFoodActivity::class.java)
+            startActivity(intent)
 
         }
 
-        val japanfood = root.findViewById<ImageView>(R.id.imageJapan_Food)
+        val japanfood = rootView!!.findViewById<ImageView>(R.id.imageJapan_Food)
         japanfood.setOnClickListener {
-            val japanfood = JapanFoodFragment()
-            val tran: FragmentTransaction = requireFragmentManager().beginTransaction()
-            tran.replace(R.id.mainLayout, japanfood)
-            tran.commit()
+            val intent = Intent (this.requireContext(), JapanFood_Activity::class.java)
+            startActivity(intent)
 
         }
 
-        val topfood = root.findViewById<ImageView>(R.id.imageMenu_food)
+        val topfood = rootView!!.findViewById<ImageView>(R.id.imageMenu_food)
         topfood.setOnClickListener {
-            val topfood = TopFoodFragment()
-            val tran: FragmentTransaction = requireFragmentManager().beginTransaction()
-            tran.replace(R.id.mainLayout, topfood)
-            tran.commit()
+            val intent = Intent (this.requireContext(), TopFood_Activity::class.java)
+            startActivity(intent)
 
         }
 
-        val topfood_clean = root.findViewById<ImageView>(R.id.imageMenu_Clean)
+        val topfood_clean = rootView!!.findViewById<ImageView>(R.id.imageMenu_Clean)
         topfood_clean.setOnClickListener {
-            val topfood_clean = Topfood_CleanFragment()
-            val tran: FragmentTransaction = requireFragmentManager().beginTransaction()
-            tran.replace(R.id.mainLayout, topfood_clean)
-            tran.commit()
+            val intent = Intent (this.requireContext(), TopFoodClean_Activity::class.java)
+            startActivity(intent)
         }
 
-        val topfood_korea = root.findViewById<ImageView>(R.id.imageMenu_Korean)
+        val topfood_korea = rootView!!.findViewById<ImageView>(R.id.imageMenu_Korean)
         topfood_korea.setOnClickListener {
-            val topfood_korea = Topfood_KoreaFragment()
-            val tran: FragmentTransaction = requireFragmentManager().beginTransaction()
-            tran.replace(R.id.mainLayout, topfood_korea)
-            tran.commit()
+            val intent = Intent (this.requireContext(), TopFoodKorea_Activity::class.java)
+            startActivity(intent)
         }
 
-        val topfood_microwave = root.findViewById<ImageView>(R.id.imageMenu_microwave)
+        val topfood_microwave = rootView!!.findViewById<ImageView>(R.id.imageMenu_microwave)
         topfood_microwave.setOnClickListener {
-            val topfood_microwave = Microwave_FoodFragment()
-            val tran: FragmentTransaction = requireFragmentManager().beginTransaction()
-            tran.replace(R.id.mainLayout, topfood_microwave)
-            tran.commit()
+            val intent = Intent (this.requireContext(), MicrowaveFood_Activity::class.java)
+            startActivity(intent)
         }
 
         /* SearchIcon Intent to Activity Search */
-        root.SearchIcon.setOnClickListener {
+        SearchIcon.setOnClickListener {
             val intent = Intent(activity, Search::class.java)
             startActivity(intent)
         }
 
-        root.scanbtn.setOnClickListener {
-            val intent = Intent (activity, Scan_Ai::class.java)
+        scanbtn.setOnClickListener {
+            val intent = Intent(activity, Scan_Ai::class.java)
             startActivity(intent)
         }
 
-
-
-        return root
     }
 
+
 }
+
 
