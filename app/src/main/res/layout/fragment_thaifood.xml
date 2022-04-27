@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView81"
+            android:id="@+id/SearchIcon_Filter"
             android:layout_width="24dp"
             android:layout_height="24dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -103,7 +103,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/tomyumkung"
+                        android:id="@+id/tomyumkungFilter"
                         android:layout_width="300dp"
                         android:layout_height="175dp"
                         android:layout_marginStart="32dp"
@@ -260,8 +260,8 @@
                         android:layout_height="92dp"
                         android:layout_marginBottom="100dp"
                         app:cardCornerRadius="17dp"
-                        app:layout_constraintBottom_toBottomOf="@+id/tomyumkung"
-                        app:layout_constraintEnd_toEndOf="@+id/tomyumkung">
+                        app:layout_constraintBottom_toBottomOf="@+id/tomyumkungFilter"
+                        app:layout_constraintEnd_toEndOf="@+id/tomyumkungFilter">
 
                         <ImageView
                             android:id="@+id/imageView30"
@@ -272,7 +272,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/cardView_padthai"
+                        android:id="@+id/padthaiFilter"
                         android:layout_width="300dp"
                         android:layout_height="175dp"
                         android:layout_marginStart="32dp"
@@ -282,7 +282,7 @@
                         app:cardCornerRadius="17dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/tomyumkung">
+                        app:layout_constraintTop_toBottomOf="@+id/tomyumkungFilter">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
@@ -428,8 +428,8 @@
                         android:layout_height="92dp"
                         android:layout_marginBottom="100dp"
                         app:cardCornerRadius="17dp"
-                        app:layout_constraintBottom_toBottomOf="@+id/cardView_padthai"
-                        app:layout_constraintEnd_toEndOf="@+id/cardView_padthai">>
+                        app:layout_constraintBottom_toBottomOf="@+id/padthaiFilter"
+                        app:layout_constraintEnd_toEndOf="@+id/padthaiFilter">>
 
                         <ImageView
                             android:id="@+id/imageView32"
@@ -439,7 +439,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/khowpadrodfie"
+                        android:id="@+id/khowpadrodfieFilter"
                         android:layout_width="300dp"
                         android:layout_height="175dp"
                         android:layout_marginStart="32dp"
@@ -449,7 +449,7 @@
                         app:cardCornerRadius="17dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/cardView_padthai">
+                        app:layout_constraintTop_toBottomOf="@+id/padthaiFilter">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
@@ -597,8 +597,8 @@
                         android:layout_height="92dp"
                         android:layout_marginBottom="100dp"
                         app:cardCornerRadius="17dp"
-                        app:layout_constraintBottom_toBottomOf="@+id/khowpadrodfie"
-                        app:layout_constraintEnd_toEndOf="@+id/khowpadrodfie">
+                        app:layout_constraintBottom_toBottomOf="@+id/khowpadrodfieFilter"
+                        app:layout_constraintEnd_toEndOf="@+id/khowpadrodfieFilter">
 
                         <ImageView
                             android:id="@+id/imageView34"
@@ -608,7 +608,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/pickkangmoo"
+                        android:id="@+id/pickkangmooFilter"
                         android:layout_width="300dp"
                         android:layout_height="175dp"
                         android:layout_marginStart="32dp"
@@ -618,7 +618,7 @@
                         app:cardCornerRadius="17dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/khowpadrodfie">
+                        app:layout_constraintTop_toBottomOf="@+id/khowpadrodfieFilter">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
@@ -765,8 +765,8 @@
                         android:layout_height="92dp"
                         android:layout_marginBottom="100dp"
                         app:cardCornerRadius="17dp"
-                        app:layout_constraintBottom_toBottomOf="@+id/pickkangmoo"
-                        app:layout_constraintEnd_toEndOf="@+id/pickkangmoo">
+                        app:layout_constraintBottom_toBottomOf="@+id/pickkangmooFilter"
+                        app:layout_constraintEnd_toEndOf="@+id/pickkangmooFilter">
 
                         <ImageView
                             android:id="@+id/imageView3"
@@ -788,7 +788,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/pickkangmoo">
+                        app:layout_constraintTop_toBottomOf="@+id/pickkangmooFilter">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"

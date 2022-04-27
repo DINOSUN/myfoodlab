@@ -28,7 +28,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView81"
+            android:id="@+id/SearchIcon_Filter"
             android:layout_width="24dp"
             android:layout_height="24dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -126,10 +126,10 @@
                                 android:layout_marginTop="8dp"
                                 android:background="@drawable/button_facebook"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView45" />
+                                app:layout_constraintTop_toBottomOf="@+id/nameSearch" />
 
                             <TextView
-                                android:id="@+id/textView45"
+                                android:id="@+id/nameSearch"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
@@ -155,7 +155,7 @@
                                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
 
                             <TextView
-                                android:id="@+id/textView55"
+                                android:id="@+id/txtnameCalorieSearch"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="32dp"
@@ -168,7 +168,7 @@
                                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
 
                             <TextView
-                                android:id="@+id/textView56"
+                                android:id="@+id/txtnameIngradientSearch"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
@@ -178,7 +178,7 @@
                                 android:textColor="#4F4F4F"
                                 android:textSize="12sp"
                                 app:layout_constraintStart_toEndOf="@+id/textView53"
-                                app:layout_constraintTop_toBottomOf="@+id/textView55" />
+                                app:layout_constraintTop_toBottomOf="@+id/txtnameCalorieSearch" />
 
                             <TextView
                                 android:id="@+id/textView53"
@@ -199,10 +199,10 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="80dp"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView56">
+                                app:layout_constraintTop_toBottomOf="@+id/txtnameIngradientSearch">
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip35"
+                                    android:id="@+id/fDesc1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="48dp"
                                     android:fontFamily="@font/robotoregular"
@@ -211,7 +211,7 @@
                                     android:textSize="9sp" />
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip36"
+                                    android:id="@+id/fDesc2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="48dp"
                                     android:fontFamily="@font/robotoregular"
@@ -220,7 +220,7 @@
                                     android:textSize="9sp" />
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip37"
+                                    android:id="@+id/fDecs3"
                                     android:layout_width="wrap_content"
                                     android:layout_height="48dp"
                                     android:fontFamily="@font/robotoregular"
@@ -286,10 +286,10 @@
                                 android:layout_marginTop="8dp"
                                 android:background="@drawable/button_facebook"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView62" />
+                                app:layout_constraintTop_toBottomOf="@+id/txtFill2" />
 
                             <TextView
-                                android:id="@+id/textView62"
+                                android:id="@+id/txtFill2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
@@ -445,10 +445,10 @@
                                 android:layout_marginTop="8dp"
                                 android:background="@drawable/button_facebook"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView98" />
+                                app:layout_constraintTop_toBottomOf="@+id/FoodName" />
 
                             <TextView
-                                android:id="@+id/textView98"
+                                android:id="@+id/FoodName"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
@@ -461,7 +461,7 @@
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
-                                android:id="@+id/textView99"
+                                android:id="@+id/txtCalorie"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
@@ -474,7 +474,7 @@
                                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout6" />
 
                             <TextView
-                                android:id="@+id/textView100"
+                                android:id="@+id/txtKcal"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="32dp"
@@ -483,11 +483,11 @@
                                 android:text="894 kcal"
                                 android:textColor="#4F4F4F"
                                 android:textSize="12sp"
-                                app:layout_constraintStart_toEndOf="@+id/textView99"
+                                app:layout_constraintStart_toEndOf="@+id/txtCalorie"
                                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout6" />
 
                             <TextView
-                                android:id="@+id/textView101"
+                                android:id="@+id/txtIngredient"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
@@ -497,7 +497,7 @@
                                 android:textColor="#000000"
                                 android:textSize="12sp"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView99" />
+                                app:layout_constraintTop_toBottomOf="@+id/txtCalorie" />
 
                             <TextView
                                 android:id="@+id/textView102"
@@ -509,8 +509,8 @@
                                 android:text="12"
                                 android:textColor="#4F4F4F"
                                 android:textSize="12sp"
-                                app:layout_constraintStart_toEndOf="@+id/textView101"
-                                app:layout_constraintTop_toBottomOf="@+id/textView100" />
+                                app:layout_constraintStart_toEndOf="@+id/txtIngredient"
+                                app:layout_constraintTop_toBottomOf="@+id/txtKcal" />
 
                             <com.google.android.material.chip.ChipGroup
                                 android:id="@+id/chipGroup13"
@@ -521,7 +521,7 @@
                                 app:layout_constraintTop_toBottomOf="@+id/textView102">
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip42"
+                                    android:id="@+id/chipDetail1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="48dp"
                                     android:fontFamily="@font/robotoregular"
@@ -530,7 +530,7 @@
                                     android:textSize="9sp" />
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip43"
+                                    android:id="@+id/chipDetail2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="48dp"
                                     android:fontFamily="@font/robotoregular"
@@ -539,7 +539,7 @@
                                     android:textSize="9sp" />
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip44"
+                                    android:id="@+id/chipDetail3"
                                     android:layout_width="wrap_content"
                                     android:layout_height="48dp"
                                     android:fontFamily="@font/robotoregular"
@@ -573,7 +573,7 @@
                         app:layout_constraintEnd_toEndOf="@+id/kimchisoup">
 
                         <ImageView
-                            android:id="@+id/imageView22"
+                            android:id="@+id/ImgFilter"
                             android:layout_width="92dp"
                             android:layout_height="92dp"
                             android:src="@drawable/kimchisoup" />

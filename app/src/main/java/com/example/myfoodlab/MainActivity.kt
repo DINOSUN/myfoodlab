@@ -11,6 +11,7 @@ import com.example.myfoodlab.ui.logout.LogoutFragment
 import com.example.myfoodlab.ui.random.RandomFragment
 import com.example.myfoodlab.ui.thaifood.ThaifoodFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity  : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +24,7 @@ class MainActivity  : AppCompatActivity(){
 
 
         makeCurrentFragment(homeMenuFragment)
+        bottom_navigation.selectedItemId = R.id.menu
 
         val bottom_navigation = findViewById<BottomNavigationView>(R.id.bottom_navigation)
 

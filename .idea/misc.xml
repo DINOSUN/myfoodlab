@@ -20,21 +20,43 @@
         <entry key="..\:/Users/ACER NITRO5/AndroidStudioProjects/myfoodlab/app/src/main/res/layout/itemhorizontal.xml" value="0.24547101449275363" />
         <entry key="..\:/Users/ACER NITRO5/AndroidStudioProjects/myfoodlab/app/src/main/res/layout/row.xml" value="0.2368659420289855" />
         <entry key="..\:/Users/ACER NITRO5/AndroidStudioProjects/myfoodlab/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.13645833333333332" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/activity_boiled_random.xml" value="0.3625" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/activity_card_menu_jumokbab.xml" value="0.3625" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/activity_card_menu_poached_eggs.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/activity_card_menu_tomyumkung.xml" value="0.3625" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/activity_filter_main.xml" value="0.264" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/activity_filter_search.xml" value="0.264" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/activity_get_details.xml" value="0.264" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/activity_main.xml" value="0.18888888888888888" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/activity_notfound_filter.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/activity_notfound_items.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/activity_notfound_items2.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/activity_one_dish_random.xml" value="0.3625" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/activity_pad_random.xml" value="0.1453125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/activity_puff_random.xml" value="0.3625" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/activity_random_items.xml" value="0.4" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/activity_search.xml" value="0.264" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/activity_testfragment.xml" value="0.3625" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/activity_thai_food.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/activity_tom_random.xml" value="0.264" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/content_notfound_items.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/dropdown_item.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/filter_items.xml" value="0.3625" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/fragment_filter_search.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/fragment_filtlter.xml" value="0.264" />
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/fragment_home_menu.xml" value="0.1925925925925926" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/fragment_home_menu.xml" value="0.264" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/fragment_italian_food.xml" value="0.3625" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/fragment_japan_food.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/fragment_koreafood.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/fragment_list_activity.xml" value="0.3625" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/fragment_logout2.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/fragment_random.xml" value="0.134375" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/fragment_random2.xml" value="0.3428063943161634" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/fragment_thaifood.xml" value="0.3625" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/fragment_topfood__clean.xml" value="0.3625" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/notfounditem.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/random_items_row.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/row_filter.xml" value="0.264" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/layout/row_items.xml" value="0.264" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/menu/bottom_menu.xml" value="0.1925925925925926" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/myfoodlab-2/app/src/main/res/menu/main.xml" value="0.25" />

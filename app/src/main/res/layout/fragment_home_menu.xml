@@ -49,7 +49,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <ImageView
-                        android:id="@+id/imageView75"
+                        android:id="@+id/SearchIcon"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/iconssearch"
@@ -99,7 +99,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView22"/>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/tomyumkung"
+                    android:id="@+id/tomyumkungFilter"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="20dp"

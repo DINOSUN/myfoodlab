@@ -2,14 +2,29 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardtomyumkung"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_mainmenu"
-    tools:context=".ui.japan.JapanFoodFragment">
+    android:orientation="vertical"
+    tools:context=".ui.fillter.Filter_main">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/txtNotMenu"
+        android:gravity="center"
+        android:text="ไม่มีเมนู"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone">
+    </TextView>
 
     <ImageView
-        android:id="@+id/imageView23"
+        android:id="@+id/imageView29"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginTop="24dp"
@@ -19,12 +34,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/button_japan_food"
+        android:id="@+id/button_thaifood"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView23"
+        app:layout_constraintEnd_toStartOf="@+id/imageView29"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
@@ -36,25 +51,11 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/iconssearch" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:id="@+id/textView82"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="68dp"
-        android:fontFamily="@font/semib"
-        android:text="Hello, Jeev jobs"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.167"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="24dp"
@@ -65,7 +66,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight="592dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView82"
+        app:layout_constraintTop_toBottomOf="@+id/button_thaifood"
         app:layout_constraintWidth="359dp">
 
         <androidx.core.widget.NestedScrollView
@@ -89,60 +90,62 @@
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:id="@+id/textView146"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
+                        android:id="@+id/textView61"
+                        android:layout_width="39dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="24dp"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/semib"
-                        android:text="Japan Food"
+                        android:text="Filter"
                         android:textColor="#3F414E"
                         android:textSize="16sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/steamedeggs"
+                        android:id="@+id/tomyumkungFilter"
                         android:layout_width="300dp"
                         android:layout_height="175dp"
                         android:layout_marginStart="32dp"
-                        android:layout_marginTop="32dp"
+                        android:layout_marginTop="65dp"
                         android:layout_marginEnd="32dp"
                         android:backgroundTint="#FFFFFF"
+                        android:visibility="gone"
                         app:cardCornerRadius="17dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView146">
+                        app:layout_constraintTop_toBottomOf="@+id/textView61"
+                        tools:visibility="visible">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView63"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="ต้มยำกุ้ง"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
 
                             <androidx.constraintlayout.widget.ConstraintLayout
                                 android:id="@+id/constraintLayout4"
                                 android:layout_width="79dp"
                                 android:layout_height="5dp"
                                 android:layout_marginStart="16dp"
-                                android:layout_marginTop="8dp"
+                                android:layout_marginTop="4dp"
                                 android:background="@drawable/button_facebook"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView160" />
+                                app:layout_constraintTop_toBottomOf="@+id/textView63" />
 
                             <TextView
-                                android:id="@+id/textView160"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginTop="8dp"
-                                android:fontFamily="@font/poppinslight"
-                                android:text="ไข่ตุ๋นญี่ปุ่น"
-                                android:textColor="#000000"
-                                android:textSize="14sp"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <TextView
-                                android:id="@+id/textView172"
+                                android:id="@+id/textView65"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
@@ -155,20 +158,7 @@
                                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
 
                             <TextView
-                                android:id="@+id/textView173"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="32dp"
-                                android:layout_marginTop="8dp"
-                                android:fontFamily="@font/regular"
-                                android:text="180 kcal"
-                                android:textColor="#4F4F4F"
-                                android:textSize="12sp"
-                                app:layout_constraintStart_toEndOf="@+id/textView172"
-                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
-
-                            <TextView
-                                android:id="@+id/textView174"
+                                android:id="@+id/textView66"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
@@ -178,59 +168,81 @@
                                 android:textColor="#000000"
                                 android:textSize="12sp"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView172" />
+                                app:layout_constraintTop_toBottomOf="@+id/textView65" />
 
                             <TextView
-                                android:id="@+id/textView175"
+                                android:id="@+id/textView68"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="874 kcal"
+                                android:textColor="#4F4F4F"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toEndOf="@+id/textView65"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+                            <TextView
+                                android:id="@+id/textView69"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
                                 android:layout_marginTop="4dp"
                                 android:fontFamily="@font/regular"
-                                android:text="6"
+                                android:text="10"
                                 android:textColor="#4F4F4F"
                                 android:textSize="12sp"
-                                app:layout_constraintStart_toEndOf="@+id/textView174"
-                                app:layout_constraintTop_toBottomOf="@+id/textView173" />
+                                app:layout_constraintStart_toEndOf="@+id/textView66"
+                                app:layout_constraintTop_toBottomOf="@+id/textView68" />
 
                             <com.google.android.material.chip.ChipGroup
-                                android:id="@+id/chipGroup"
+                                android:id="@+id/chipGroup16"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="80dp"
+                                android:layout_marginStart="68dp"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView175">
+                                app:layout_constraintTop_toBottomOf="@+id/textView69">
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip6"
+                                    android:id="@+id/chip38"
                                     android:layout_width="wrap_content"
                                     android:layout_height="48dp"
                                     android:fontFamily="@font/robotoregular"
-                                    android:text="ผงซุปดาชิ"
+                                    android:text="กุ้ง"
                                     android:textColor="#000000"
                                     android:textSize="9sp" />
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip7"
-                                    android:layout_width="48dp"
-                                    android:layout_height="wrap_content"
+                                    android:id="@+id/chip51"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
                                     android:fontFamily="@font/robotoregular"
-                                    android:text="ไข่ไก่"
+                                    android:text="ข่า"
                                     android:textColor="#000000"
                                     android:textSize="9sp" />
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip8"
-                                    android:layout_width="48dp"
-                                    android:layout_height="wrap_content"
+                                    android:id="@+id/chip52"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
                                     android:fontFamily="@font/robotoregular"
-                                    android:text="ปูอัด"
+                                    android:text="ใบมะกรูด"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip53"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="ตะไคร้"
                                     android:textColor="#000000"
                                     android:textSize="9sp" />
                             </com.google.android.material.chip.ChipGroup>
 
                             <TextView
-                                android:id="@+id/textView179"
+                                android:id="@+id/textView13"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
@@ -240,195 +252,181 @@
                                 android:textColor="#828282"
                                 android:textSize="8sp"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/chipGroup" />
+                                app:layout_constraintTop_toBottomOf="@+id/chipGroup16" />
+
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="92dp"
-                        android:layout_height="92dp"
-                        android:layout_marginBottom="100dp"
-                        app:cardCornerRadius="17dp"
-                        app:layout_constraintBottom_toBottomOf="@+id/steamedeggs"
-                        app:layout_constraintEnd_toEndOf="@+id/steamedeggs">
-
-                        <ImageView
-                            android:id="@+id/imageView56"
-                            android:layout_width="92dp"
-                            android:layout_height="92dp"
-                            android:src="@drawable/steamedeggs" />
-                    </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/sukiyaki"
+                        android:id="@+id/padthaiFilter"
                         android:layout_width="300dp"
                         android:layout_height="175dp"
                         android:layout_marginStart="32dp"
                         android:layout_marginTop="40dp"
                         android:layout_marginEnd="32dp"
                         android:backgroundTint="#FFFFFF"
+                        android:visibility="gone"
                         app:cardCornerRadius="17dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/steamedeggs">
+                        app:layout_constraintTop_toBottomOf="@+id/tomyumkungFilter"
+                        tools:visibility="visible">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView73"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="ผัดไทยกุ้งสด"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView75"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Calories"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
+                            <TextView
+                                android:id="@+id/textView76"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Ingredient "
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView75" />
+
+                            <TextView
+                                android:id="@+id/textView78"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="486 kcal"
+                                android:textColor="#4F4F4F"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toEndOf="@+id/textView75"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
+                            <TextView
+                                android:id="@+id/textView79"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/regular"
+                                android:text="11"
+                                android:textColor="#4F4F4F"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toEndOf="@+id/textView76"
+                                app:layout_constraintTop_toBottomOf="@+id/textView78" />
+
+                            <com.google.android.material.chip.ChipGroup
+                                android:id="@+id/chipGroup17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView79">
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip54"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="กุ้ง"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip55"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="ไชโป๊"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip56"
+                                    textColor="#000000"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="ใบกุ่ยช่าย"
+                                    android:textSize="9sp" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip57"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="เต้าหู้เหลือง"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+                            </com.google.android.material.chip.ChipGroup>
+
+                            <TextView
+                                android:id="@+id/textView14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="32dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Read More"
+                                android:textColor="#828282"
+                                android:textSize="8sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/chipGroup17" />
 
                             <androidx.constraintlayout.widget.ConstraintLayout
                                 android:id="@+id/constraintLayout5"
                                 android:layout_width="79dp"
                                 android:layout_height="5dp"
                                 android:layout_marginStart="16dp"
-                                android:layout_marginTop="8dp"
+                                android:layout_marginTop="4dp"
                                 android:background="@drawable/button_facebook"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView180" />
-
-                            <TextView
-                                android:id="@+id/textView180"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginTop="8dp"
-                                android:fontFamily="@font/poppinslight"
-                                android:text="สุกี้ยากี้น้ำดำ"
-                                android:textColor="#000000"
-                                android:textSize="14sp"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <TextView
-                                android:id="@+id/textView181"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginTop="8dp"
-                                android:fontFamily="@font/regular"
-                                android:text="Calories"
-                                android:textColor="#000000"
-                                android:textSize="12sp"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
-
-                            <TextView
-                                android:id="@+id/textView182"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="32dp"
-                                android:layout_marginTop="8dp"
-                                android:fontFamily="@font/regular"
-                                android:text="625 kcal"
-                                android:textColor="#4F4F4F"
-                                android:textSize="12sp"
-                                app:layout_constraintStart_toEndOf="@+id/textView181"
-                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
-
-                            <TextView
-                                android:id="@+id/textView183"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginTop="4dp"
-                                android:fontFamily="@font/regular"
-                                android:text="Ingredient "
-                                android:textColor="#000000"
-                                android:textSize="12sp"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView181" />
-
-                            <TextView
-                                android:id="@+id/textView184"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginTop="4dp"
-                                android:fontFamily="@font/regular"
-                                android:text="12"
-                                android:textColor="#4F4F4F"
-                                android:textSize="12sp"
-                                app:layout_constraintStart_toEndOf="@+id/textView183"
-                                app:layout_constraintTop_toBottomOf="@+id/textView182" />
-
-                            <com.google.android.material.chip.ChipGroup
-                                android:id="@+id/chipGroup2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="80dp"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView184">
-
-                                <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip9"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="48dp"
-                                    android:fontFamily="@font/robotoregular"
-                                    android:text="คิคโคแมน"
-                                    android:textColor="#000000"
-                                    android:textSize="9sp" />
-
-                                <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip10"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="48dp"
-                                    android:fontFamily="@font/robotoregular"
-                                    android:text="มิริน"
-                                    android:textColor="#000000"
-                                    android:textSize="9sp" />
-
-                                <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip11"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="48dp"
-                                    android:fontFamily="@font/robotoregular"
-                                    android:text="สาเก"
-                                    android:textColor="#000000"
-                                    android:textSize="9sp" />
-                            </com.google.android.material.chip.ChipGroup>
-
-                            <TextView
-                                android:id="@+id/textView188"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:layout_marginEnd="32dp"
-                                android:fontFamily="@font/regular"
-                                android:text="Read More"
-                                android:textColor="#828282"
-                                android:textSize="8sp"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/chipGroup2" />
+                                app:layout_constraintTop_toBottomOf="@+id/textView73" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="92dp"
-                        android:layout_height="92dp"
-                        android:layout_marginBottom="100dp"
-                        app:cardCornerRadius="17dp"
-                        app:layout_constraintBottom_toBottomOf="@+id/sukiyaki"
-                        app:layout_constraintEnd_toEndOf="@+id/sukiyaki">
-
-                        <ImageView
-                            android:id="@+id/imageView27"
-                            android:layout_width="92dp"
-                            android:layout_height="92dp"
-                            android:src="@drawable/sukiyaki" />
-                    </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/yoshinoyagyudon"
+                        android:id="@+id/khowpadrodfieFilter"
                         android:layout_width="300dp"
                         android:layout_height="175dp"
                         android:layout_marginStart="32dp"
                         android:layout_marginTop="40dp"
                         android:layout_marginEnd="32dp"
                         android:backgroundTint="#FFFFFF"
+                        android:visibility="gone"
                         app:cardCornerRadius="17dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/sukiyaki">
+                        app:layout_constraintTop_toBottomOf="@+id/padthaiFilter"
+                        tools:visibility="visible">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
@@ -442,23 +440,23 @@
                                 android:layout_marginTop="8dp"
                                 android:background="@drawable/button_facebook"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView189" />
+                                app:layout_constraintTop_toBottomOf="@+id/textView83" />
 
                             <TextView
-                                android:id="@+id/textView189"
+                                android:id="@+id/textView83"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
                                 android:layout_marginTop="8dp"
                                 android:fontFamily="@font/poppinslight"
-                                android:text="ข้าวหน้าเนื้อ"
+                                android:text="ข้าวผัดรถไฟ"
                                 android:textColor="#000000"
                                 android:textSize="14sp"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
-                                android:id="@+id/textView190"
+                                android:id="@+id/textView84"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
@@ -471,20 +469,7 @@
                                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout6" />
 
                             <TextView
-                                android:id="@+id/textView191"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="32dp"
-                                android:layout_marginTop="8dp"
-                                android:fontFamily="@font/regular"
-                                android:text="720 kcal"
-                                android:textColor="#4F4F4F"
-                                android:textSize="12sp"
-                                app:layout_constraintStart_toEndOf="@+id/textView190"
-                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout6" />
-
-                            <TextView
-                                android:id="@+id/textView192"
+                                android:id="@+id/textView85"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
@@ -494,10 +479,23 @@
                                 android:textColor="#000000"
                                 android:textSize="12sp"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView190" />
+                                app:layout_constraintTop_toBottomOf="@+id/textView84" />
 
                             <TextView
-                                android:id="@+id/textView193"
+                                android:id="@+id/textView87"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="600 kcal"
+                                android:textColor="#4F4F4F"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toEndOf="@+id/textView84"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout6" />
+
+                            <TextView
+                                android:id="@+id/textView88"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
@@ -506,56 +504,56 @@
                                 android:text="11"
                                 android:textColor="#4F4F4F"
                                 android:textSize="12sp"
-                                app:layout_constraintStart_toEndOf="@+id/textView192"
-                                app:layout_constraintTop_toBottomOf="@+id/textView191" />
+                                app:layout_constraintStart_toEndOf="@+id/textView85"
+                                app:layout_constraintTop_toBottomOf="@+id/textView87" />
 
                             <com.google.android.material.chip.ChipGroup
-                                android:id="@+id/chipGroup3"
+                                android:id="@+id/chipGroup18"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="68dp"
+                                android:layout_marginStart="52dp"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView193">
+                                app:layout_constraintTop_toBottomOf="@+id/textView88">
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip12"
+                                    android:id="@+id/chip58"
                                     android:layout_width="wrap_content"
                                     android:layout_height="48dp"
                                     android:fontFamily="@font/robotoregular"
-                                    android:text="โชยุ"
+                                    android:text="ข้าวสวย"
                                     android:textColor="#000000"
                                     android:textSize="9sp" />
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip13"
+                                    android:id="@+id/chip59"
                                     android:layout_width="wrap_content"
                                     android:layout_height="48dp"
                                     android:fontFamily="@font/robotoregular"
-                                    android:text="มิริน"
+                                    android:text="หมู"
                                     android:textColor="#000000"
                                     android:textSize="9sp" />
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip14"
+                                    android:id="@+id/chip60"
                                     android:layout_width="wrap_content"
                                     android:layout_height="48dp"
                                     android:fontFamily="@font/robotoregular"
-                                    android:text="สาเก"
+                                    android:text="คะน้า"
                                     android:textColor="#000000"
                                     android:textSize="9sp" />
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip15"
+                                    android:id="@+id/chip61"
                                     android:layout_width="wrap_content"
                                     android:layout_height="48dp"
                                     android:fontFamily="@font/robotoregular"
-                                    android:text="เนื้อสไลด์"
+                                    android:text="มะเขือเทศ"
                                     android:textColor="#000000"
                                     android:textSize="9sp" />
                             </com.google.android.material.chip.ChipGroup>
 
                             <TextView
-                                android:id="@+id/textView197"
+                                android:id="@+id/textView28"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
@@ -565,37 +563,26 @@
                                 android:textColor="#828282"
                                 android:textSize="8sp"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/chipGroup3" />
+                                app:layout_constraintTop_toBottomOf="@+id/chipGroup18" />
+
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="92dp"
-                        android:layout_height="92dp"
-                        android:layout_marginBottom="100dp"
-                        app:cardCornerRadius="17dp"
-                        app:layout_constraintBottom_toBottomOf="@+id/yoshinoyagyudon"
-                        app:layout_constraintEnd_toEndOf="@+id/yoshinoyagyudon">
-
-                        <ImageView
-                            android:id="@+id/imageView28"
-                            android:layout_width="92dp"
-                            android:layout_height="92dp"
-                            android:src="@drawable/yoshinoyagyudon" />
-                    </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/okonomiyaki"
+                        android:id="@+id/pickkangmooFilter"
                         android:layout_width="300dp"
                         android:layout_height="175dp"
                         android:layout_marginStart="32dp"
                         android:layout_marginTop="40dp"
                         android:layout_marginEnd="32dp"
                         android:backgroundTint="#FFFFFF"
+                        android:visibility="gone"
                         app:cardCornerRadius="17dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/yoshinoyagyudon">
+                        app:layout_constraintTop_toBottomOf="@+id/khowpadrodfieFilter"
+                        tools:visibility="visible">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
@@ -609,23 +596,23 @@
                                 android:layout_marginTop="8dp"
                                 android:background="@drawable/button_facebook"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView198" />
+                                app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
                             <TextView
-                                android:id="@+id/textView198"
+                                android:id="@+id/textView5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
                                 android:layout_marginTop="8dp"
                                 android:fontFamily="@font/poppinslight"
-                                android:text="โอโคโนมิยากิ"
+                                android:text="ผัดพริกแกงหมู"
                                 android:textColor="#000000"
                                 android:textSize="14sp"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
-                                android:id="@+id/textView199"
+                                android:id="@+id/textView10"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
@@ -638,20 +625,7 @@
                                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout7" />
 
                             <TextView
-                                android:id="@+id/textView200"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="32dp"
-                                android:layout_marginTop="8dp"
-                                android:fontFamily="@font/regular"
-                                android:text="360 kcal"
-                                android:textColor="#4F4F4F"
-                                android:textSize="12sp"
-                                app:layout_constraintStart_toEndOf="@+id/textView199"
-                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout7" />
-
-                            <TextView
-                                android:id="@+id/textView201"
+                                android:id="@+id/textView11"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
@@ -661,59 +635,81 @@
                                 android:textColor="#000000"
                                 android:textSize="12sp"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView199" />
+                                app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
                             <TextView
-                                android:id="@+id/textView202"
+                                android:id="@+id/textView21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="440 kcal"
+                                android:textColor="#4F4F4F"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toEndOf="@+id/textView10"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout7" />
+
+                            <TextView
+                                android:id="@+id/textView25"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
                                 android:layout_marginTop="4dp"
                                 android:fontFamily="@font/regular"
-                                android:text="9"
+                                android:text="8"
                                 android:textColor="#4F4F4F"
                                 android:textSize="12sp"
-                                app:layout_constraintStart_toEndOf="@+id/textView201"
-                                app:layout_constraintTop_toBottomOf="@+id/textView200" />
+                                app:layout_constraintStart_toEndOf="@+id/textView11"
+                                app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
                             <com.google.android.material.chip.ChipGroup
-                                android:id="@+id/chipGroup4"
+                                android:id="@+id/chipGroup19"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="80dp"
+                                android:layout_marginStart="50dp"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView202">
+                                app:layout_constraintTop_toBottomOf="@+id/textView25">
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip16"
+                                    android:id="@+id/chip62"
                                     android:layout_width="wrap_content"
                                     android:layout_height="48dp"
                                     android:fontFamily="@font/robotoregular"
-                                    android:text="กะหล่ำปลี"
+                                    android:text="พริกแกง"
                                     android:textColor="#000000"
                                     android:textSize="9sp" />
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip17"
+                                    android:id="@+id/chip63"
                                     android:layout_width="wrap_content"
                                     android:layout_height="48dp"
                                     android:fontFamily="@font/robotoregular"
-                                    android:text="ปลาแห้ง"
+                                    android:text="หมู"
                                     android:textColor="#000000"
                                     android:textSize="9sp" />
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip18"
+                                    android:id="@+id/chip64"
                                     android:layout_width="wrap_content"
                                     android:layout_height="48dp"
                                     android:fontFamily="@font/robotoregular"
-                                    android:text="แป้งฮาคุริกิ"
+                                    android:text="ใบมะกรูด"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip65"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="ถั่วฝักยาว"
                                     android:textColor="#000000"
                                     android:textSize="9sp" />
                             </com.google.android.material.chip.ChipGroup>
 
                             <TextView
-                                android:id="@+id/textView206"
+                                android:id="@+id/textView36"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
@@ -723,27 +719,14 @@
                                 android:textColor="#828282"
                                 android:textSize="8sp"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/chipGroup4" />
+                                app:layout_constraintTop_toBottomOf="@+id/chipGroup19" />
+
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="92dp"
-                        android:layout_height="92dp"
-                        android:layout_marginBottom="100dp"
-                        app:cardCornerRadius="17dp"
-                        app:layout_constraintBottom_toBottomOf="@+id/okonomiyaki"
-                        app:layout_constraintEnd_toEndOf="@+id/okonomiyaki">
-
-                        <ImageView
-                            android:id="@+id/imageView31"
-                            android:layout_width="92dp"
-                            android:layout_height="92dp"
-                            android:src="@drawable/okonomiyaki" />
-                    </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/yakisoba"
+                        android:id="@+id/larbmoo"
                         android:layout_width="300dp"
                         android:layout_height="175dp"
                         android:layout_marginStart="32dp"
@@ -751,11 +734,13 @@
                         android:layout_marginEnd="32dp"
                         android:layout_marginBottom="32dp"
                         android:backgroundTint="#FFFFFF"
+                        android:visibility="gone"
                         app:cardCornerRadius="17dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/okonomiyaki">
+                        app:layout_constraintTop_toBottomOf="@+id/pickkangmooFilter"
+                        tools:visibility="visible">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
@@ -769,23 +754,23 @@
                                 android:layout_marginTop="8dp"
                                 android:background="@drawable/button_facebook"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView207" />
+                                app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
                             <TextView
-                                android:id="@+id/textView207"
+                                android:id="@+id/textView29"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
                                 android:layout_marginTop="8dp"
                                 android:fontFamily="@font/poppinslight"
-                                android:text="ยากิโซบะ"
+                                android:text="ลาบหมู"
                                 android:textColor="#000000"
                                 android:textSize="14sp"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
-                                android:id="@+id/textView208"
+                                android:id="@+id/textView30"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
@@ -798,20 +783,7 @@
                                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
 
                             <TextView
-                                android:id="@+id/textView209"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="32dp"
-                                android:layout_marginTop="8dp"
-                                android:fontFamily="@font/regular"
-                                android:text=" 527 kcal"
-                                android:textColor="#4F4F4F"
-                                android:textSize="12sp"
-                                app:layout_constraintStart_toEndOf="@+id/textView208"
-                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
-
-                            <TextView
-                                android:id="@+id/textView210"
+                                android:id="@+id/textView31"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
@@ -821,59 +793,81 @@
                                 android:textColor="#000000"
                                 android:textSize="12sp"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView208" />
+                                app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
                             <TextView
-                                android:id="@+id/textView211"
+                                android:id="@+id/textView33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text=" 589 kcal"
+                                android:textColor="#4F4F4F"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toEndOf="@+id/textView30"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
+
+                            <TextView
+                                android:id="@+id/textView34"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
                                 android:layout_marginTop="4dp"
                                 android:fontFamily="@font/regular"
-                                android:text="11"
+                                android:text="14"
                                 android:textColor="#4F4F4F"
                                 android:textSize="12sp"
-                                app:layout_constraintStart_toEndOf="@+id/textView210"
-                                app:layout_constraintTop_toBottomOf="@+id/textView209" />
+                                app:layout_constraintStart_toEndOf="@+id/textView31"
+                                app:layout_constraintTop_toBottomOf="@+id/textView33" />
 
                             <com.google.android.material.chip.ChipGroup
-                                android:id="@+id/chipGroup5"
+                                android:id="@+id/chipGroup20"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="80dp"
+                                android:layout_marginStart="68dp"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView211">
+                                app:layout_constraintTop_toBottomOf="@+id/textView34">
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip19"
+                                    android:id="@+id/chip66"
                                     android:layout_width="wrap_content"
                                     android:layout_height="48dp"
                                     android:fontFamily="@font/robotoregular"
-                                    android:text="เส้นยากิโซบะ"
+                                    android:text="หมูสับ"
                                     android:textColor="#000000"
                                     android:textSize="9sp" />
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip20"
+                                    android:id="@+id/chip67"
                                     android:layout_width="wrap_content"
                                     android:layout_height="48dp"
                                     android:fontFamily="@font/robotoregular"
-                                    android:text="ซีอิ๊วดำ"
+                                    android:text="ตับหมู"
                                     android:textColor="#000000"
                                     android:textSize="9sp" />
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip21"
+                                    android:id="@+id/chip68"
                                     android:layout_width="wrap_content"
                                     android:layout_height="48dp"
                                     android:fontFamily="@font/robotoregular"
-                                    android:text="หมูหมัก"
+                                    android:text="พริกป่น"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip69"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="ข้าวคั่ว"
                                     android:textColor="#000000"
                                     android:textSize="9sp" />
                             </com.google.android.material.chip.ChipGroup>
 
                             <TextView
-                                android:id="@+id/textView215"
+                                android:id="@+id/textView39"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
@@ -883,27 +877,17 @@
                                 android:textColor="#828282"
                                 android:textSize="8sp"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/chipGroup5" />
+                                app:layout_constraintTop_toBottomOf="@+id/chipGroup20" />
+
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="92dp"
-                        android:layout_height="92dp"
-                        android:layout_marginBottom="100dp"
-                        app:cardCornerRadius="17dp"
-                        app:layout_constraintBottom_toBottomOf="@+id/yakisoba"
-                        app:layout_constraintEnd_toEndOf="@+id/yakisoba">
-
-                        <ImageView
-                            android:id="@+id/imageView33"
-                            android:layout_width="92dp"
-                            android:layout_height="92dp"
-                            android:src="@drawable/yakisoba" />
-                    </androidx.cardview.widget.CardView>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

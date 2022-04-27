@@ -12,10 +12,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Myfoodlab">
         <activity
+            android:name=".ui.thaifood.ThaiFood_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.fillter.notfoundFilter"
+            android:exported="false" />
+        <activity
+            android:name=".ui.fillter.getDetails"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.fillter.Filter_main"
+            android:exported="false" />
+        <activity
             android:name=".OneDish_Random"
             android:exported="false" />
         <activity
-            android:name=".Pad_Random"
+            android:name=".puff_Random"
             android:exported="false" />
         <activity
             android:name=".CardMenu_SweetandSour"
@@ -36,10 +51,7 @@
             android:name=".Spash"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Tom_Random"
+            android:name=".Boiled_Random"
             android:exported="false" />
         <activity
             android:name=".Search"
