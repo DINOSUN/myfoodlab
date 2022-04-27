@@ -1,4 +1,4 @@
-package com.example.myfoodlab.ui.Carrd_for_Saech
+package com.example.myfoodlab.ui.carrd_for_saech
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

@@ -150,12 +150,16 @@ class Scan_Ai : AppCompatActivity() {
             /*img_view.setImageURI(data?.data)
             var uri : Uri ?= data?.data
             bitmap = MediaStore.Images.Media.getBitmap(this.contentResolver, uri)*/
-        } else if(requestCode == Activity.RESULT_OK ){
+        } else if(requestCode == 200 && resultCode == Activity.RESULT_OK ){
             bitmap = data?.extras?.get("data") as Bitmap
             img_view.setImageBitmap(bitmap)
+            text_view.text = ""
         } else{
             img_view.setImageURI(null)
             img_view.setImageBitmap(null)
+            bitmap = null
+            img_view.setImageResource(R.drawable.camera_ai)
+            text_view.text = "Choose image"
         }
 
         //}
