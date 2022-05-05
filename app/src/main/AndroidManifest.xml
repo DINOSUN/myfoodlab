@@ -79,7 +79,7 @@
             android:name=".CardMenu_Tomyumkung"
             android:exported="false" />
         <activity
-            android:name=".Spash"
+            android:name=".WelcomeSignup"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -88,7 +88,7 @@
             android:name=".Search"
             android:exported="false" />
         <activity
-            android:name=".WelcomeSignup"
+            android:name=".Spash"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>

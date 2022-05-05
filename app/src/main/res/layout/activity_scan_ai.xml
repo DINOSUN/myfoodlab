@@ -18,7 +18,8 @@
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageai"
-        app:srcCompat="@drawable/albumolder" />
+        app:srcCompat="@drawable/albumolder"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/camerabtn"
@@ -28,7 +29,8 @@
         android:layout_marginEnd="54dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageai"
-        app:srcCompat="@drawable/camera" />
+        app:srcCompat="@drawable/camera"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/textView423"

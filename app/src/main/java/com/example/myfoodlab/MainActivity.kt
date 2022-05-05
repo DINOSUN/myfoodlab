@@ -1,7 +1,10 @@
 package com.example.myfoodlab
 
 
+import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
@@ -26,7 +29,6 @@ class MainActivity  : AppCompatActivity(){
         bottom_navigation.selectedItemId = R.id.menu
 
 
-
         bottom_navigation.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.filter -> makeCurrentFragment(fillterFragment)
@@ -43,14 +45,5 @@ class MainActivity  : AppCompatActivity(){
             replace(R.id.fram_nav, fragment)
             commit()
         }
-
-
-/*        Looper.myLooper()?.let {
-            Handler(it).postDelayed({
-                val intent = Intent(this, WelcomeSignup::class.java)
-                startActivity(intent)
-            }, 3000)
-        }*/
-        }
-
+    }
 }
