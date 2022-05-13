@@ -11,8 +11,13 @@ import android.widget.Button
 import android.widget.ImageView
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.FragmentTransaction
+import com.denzcoskun.imageslider.ImageSlider
+import com.denzcoskun.imageslider.constants.ScaleTypes
+import com.denzcoskun.imageslider.models.SlideModel
 import com.example.myfoodlab.CardMenu_Tomyumkung
 import com.example.myfoodlab.R
+import com.example.myfoodlab.Scan_Ai
+
 import com.example.myfoodlab.ui.italianfood.ItalianFoodFragment
 import com.example.myfoodlab.ui.japan.JapanFoodFragment
 import com.example.myfoodlab.ui.koreafood.koreafoodFragment
@@ -22,6 +27,9 @@ import com.example.myfoodlab.ui.topfood.TopFoodFragment
 import com.example.myfoodlab.ui.topfood_clean.Topfood_CleanFragment
 import com.example.myfoodlab.ui.topfood_korea.Topfood_KoreaFragment
 import kotlinx.android.synthetic.main.fragment_home_menu.*
+import kotlinx.android.synthetic.main.fragment_home_menu.view.*
+import java.lang.reflect.Array
+import java.util.ArrayList
 
 
 class HomeMenuFragment : Fragment() {
@@ -33,6 +41,15 @@ class HomeMenuFragment : Fragment() {
         // Inflate the layout for this fragment
         val root = inflater.inflate(R.layout.fragment_home_menu, container, false)
 
+        //imageSlider
+        val imageList = ArrayList<SlideModel>()
+
+        imageList.add(SlideModel("https://sv1.picz.in.th/images/2022/03/27/8BOtVe.png"))
+        imageList.add(SlideModel("https://sv1.picz.in.th/images/2022/03/27/8BqZuD.png"))
+        imageList.add(SlideModel("https://sv1.picz.in.th/images/2022/03/27/8BqcM9.png"))
+
+        val imageSlider = root.findViewById<ImageSlider>(R.id.image_slider)
+        imageSlider.setImageList(imageList)
 
 
         // intent card category
@@ -103,6 +120,14 @@ class HomeMenuFragment : Fragment() {
             val tran: FragmentTransaction = requireFragmentManager().beginTransaction()
             tran.replace(R.id.mainLayout, topfood_microwave)
             tran.commit()
+        }
+
+        /* SearchIcon Intent to Activity Search */
+
+
+        root.scanbtn.setOnClickListener {
+            val intent = Intent (activity, Scan_Ai::class.java)
+            startActivity(intent)
         }
 
 

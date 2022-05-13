@@ -102,8 +102,8 @@ class SignUp : AppCompatActivity() {
 
 
     private fun createAccount() {
-        email = txtEmailCreate!!.text.toString()
-        password = txtPasswordCreate!!.text.toString()
+        email = txtEmailCreate.text.toString()
+        password = txtPasswordCreate.text.toString()
         mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(this) {
                 task -> if (task.isSuccessful){
             Log.d("My App","Create New User Success!")
